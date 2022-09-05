@@ -10,5 +10,9 @@ package Model;
  * @author User
  */
 public class Productos {
+    protected int id_productos;
+    protected String nombre_producto;
+    protected float precio_producto;
+    
     
 }

@@ -8,7 +8,7 @@ package Model;
  *
  * @author Enzo
  */
-public class Operario {
+public class Operarios {
     
     protected int id_operario;
     protected String nombre;
@@ -56,17 +56,17 @@ public class Operario {
         this.nivel_permiso = nivel_permiso;
     }
 
-    public Operario() {
+    public Operarios() {
     }
 
-    public Operario( String nombre, String contraseña, String jornada, String nivel_permiso) {
+    public Operarios( String nombre, String contraseña, String jornada, String nivel_permiso) {
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.jornada = jornada;
         this.nivel_permiso = nivel_permiso;
     }
 
-    public Operario(int id_operario, String nombre, String contraseña, String jornada, String nivel_permiso) {
+    public Operarios(int id_operario, String nombre, String contraseña, String jornada, String nivel_permiso) {
         this.id_operario = id_operario;
         this.nombre = nombre;
         this.contraseña = contraseña;

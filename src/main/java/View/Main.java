@@ -27,53 +27,110 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        mbClientes = new javax.swing.JMenu();
+        mbVeterinarios = new javax.swing.JMenu();
+        mbProductos = new javax.swing.JMenu();
+        miAlimento = new javax.swing.JMenuItem();
+        miAccesorios = new javax.swing.JMenuItem();
+        miMedicos = new javax.swing.JMenuItem();
+        mbProveedores = new javax.swing.JMenu();
+        miEmpresas = new javax.swing.JMenuItem();
+        miFarmaceuticos = new javax.swing.JMenuItem();
+        miAutonomos = new javax.swing.JMenuItem();
+        mbTurnos = new javax.swing.JMenu();
+        miCitas = new javax.swing.JMenuItem();
+        miVisitas = new javax.swing.JMenuItem();
+        miIntervenciones = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Veterinaria");
 
-        jMenu1.setText("Productos");
-        jMenuBar1.add(jMenu1);
+        mbClientes.setText("Clientes");
+        jMenuBar2.add(mbClientes);
 
-        jMenu2.setText("Clientes");
-        jMenuBar1.add(jMenu2);
+        mbVeterinarios.setText("Veterinarios");
+        jMenuBar2.add(mbVeterinarios);
 
-        jMenu3.setText("Mascotas");
-        jMenuBar1.add(jMenu3);
+        mbProductos.setText("Productos");
 
-        jMenu4.setText("Veterinarios");
-        jMenuBar1.add(jMenu4);
+        miAlimento.setText("Alimento");
+        miAlimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miAlimentoActionPerformed(evt);
+            }
+        });
+        mbProductos.add(miAlimento);
 
-        jMenu5.setText("Intervenciones");
-        jMenuBar1.add(jMenu5);
+        miAccesorios.setText("Accesorios");
+        mbProductos.add(miAccesorios);
 
-        setJMenuBar(jMenuBar1);
+        miMedicos.setText("Medicos");
+        mbProductos.add(miMedicos);
+
+        jMenuBar2.add(mbProductos);
+
+        mbProveedores.setText("Proveedores");
+
+        miEmpresas.setText("Empresas");
+        mbProveedores.add(miEmpresas);
+
+        miFarmaceuticos.setText("Farmaceuticos");
+        miFarmaceuticos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miFarmaceuticosActionPerformed(evt);
+            }
+        });
+        mbProveedores.add(miFarmaceuticos);
+
+        miAutonomos.setText("Autonomos");
+        mbProveedores.add(miAutonomos);
+
+        jMenuBar2.add(mbProveedores);
+
+        mbTurnos.setText("Turnos");
+
+        miCitas.setText("Citas");
+        mbTurnos.add(miCitas);
+
+        miVisitas.setText("Visitas");
+        mbTurnos.add(miVisitas);
+
+        miIntervenciones.setText("Intervenciones");
+        mbTurnos.add(miIntervenciones);
+
+        jMenuBar2.add(mbTurnos);
+
+        setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(203, 203, 203)
+                .addGap(207, 207, 207)
                 .addComponent(jLabel1)
-                .addContainerGap(230, Short.MAX_VALUE))
+                .addContainerGap(226, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(104, 104, 104)
+                .addGap(81, 81, 81)
                 .addComponent(jLabel1)
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addContainerGap(238, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void miAlimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAlimentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miAlimentoActionPerformed
+
+    private void miFarmaceuticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miFarmaceuticosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miFarmaceuticosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,11 +169,20 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenu mbClientes;
+    private javax.swing.JMenu mbProductos;
+    private javax.swing.JMenu mbProveedores;
+    private javax.swing.JMenu mbTurnos;
+    private javax.swing.JMenu mbVeterinarios;
+    private javax.swing.JMenuItem miAccesorios;
+    private javax.swing.JMenuItem miAlimento;
+    private javax.swing.JMenuItem miAutonomos;
+    private javax.swing.JMenuItem miCitas;
+    private javax.swing.JMenuItem miEmpresas;
+    private javax.swing.JMenuItem miFarmaceuticos;
+    private javax.swing.JMenuItem miIntervenciones;
+    private javax.swing.JMenuItem miMedicos;
+    private javax.swing.JMenuItem miVisitas;
     // End of variables declaration//GEN-END:variables
 }

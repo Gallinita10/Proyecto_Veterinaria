@@ -18,6 +18,7 @@ public class Intervenciones {
     protected LocalDate fecha_intervencion;
     protected LocalTime hora_intervencion;
     protected Quirofanos quirofano;
+    protected String descripcion;
 
     public int getId_intervencion() {
         return id_intervencion;
@@ -67,25 +68,38 @@ public class Intervenciones {
         this.quirofano = quirofano;
     }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    
+    
     public Intervenciones() {
     }
 
-    public Intervenciones(int id_intervencion, Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano) {
+    public Intervenciones(int id_intervencion, Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano, String descripcion) {
         this.id_intervencion = id_intervencion;
         this.mascota = mascota;
         this.veterinario = veterinario;
         this.fecha_intervencion = fecha_intervencion;
         this.hora_intervencion = hora_intervencion;
         this.quirofano = quirofano;
+        this.descripcion = descripcion;
     }
 
-    public Intervenciones(Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano) {
+    public Intervenciones(Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano, String descripcion) {
         this.mascota = mascota;
         this.veterinario = veterinario;
         this.fecha_intervencion = fecha_intervencion;
         this.hora_intervencion = hora_intervencion;
         this.quirofano = quirofano;
+        this.descripcion = descripcion;
     }
+
     
     
     

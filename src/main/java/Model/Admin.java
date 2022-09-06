@@ -41,6 +41,11 @@ public class Admin {
     public Admin() {
     }
 
+    public Admin(String nombre, String contraseña) {
+        this.nombre = nombre;
+        this.contraseña = contraseña;
+    }
+
     public Admin(int id_admin, String nombre, String contraseña) {
         this.id_admin = id_admin;
         this.nombre = nombre;

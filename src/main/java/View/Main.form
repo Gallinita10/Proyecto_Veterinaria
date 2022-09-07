@@ -21,7 +21,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="miAlimento">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Alimento"/>
+                <Property name="text" type="java.lang.String" value="Alimenticios"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miAlimentoActionPerformed"/>
@@ -90,6 +90,73 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Archivos"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMClientes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Clientes"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMMascotas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Mascotas"/>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="miABMProductos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Productos"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMAlimenticios">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Alimenticios"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMAccesorios">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Accesorios"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMMedicos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Medicos"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miABMMedicosActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="miABMProveedores">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Proveedores"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMEmpresas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Empresas"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMFarmaceuticos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Farmaceuticos"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miABMAutonomos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Autonomos"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMVeterinarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Veterinarios"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miABMVeterinariosActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mbHistoriales">
           <Properties>

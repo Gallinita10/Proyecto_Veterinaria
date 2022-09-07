@@ -43,6 +43,17 @@ public class Main extends javax.swing.JFrame {
         miVisitas = new javax.swing.JMenuItem();
         miIntervenciones = new javax.swing.JMenuItem();
         mbArchivos = new javax.swing.JMenu();
+        miABMClientes = new javax.swing.JMenuItem();
+        miABMMascotas = new javax.swing.JMenuItem();
+        miABMProductos = new javax.swing.JMenu();
+        miABMAlimenticios = new javax.swing.JMenuItem();
+        miABMAccesorios = new javax.swing.JMenuItem();
+        miABMMedicos = new javax.swing.JMenuItem();
+        miABMProveedores = new javax.swing.JMenu();
+        miABMEmpresas = new javax.swing.JMenuItem();
+        miABMFarmaceuticos = new javax.swing.JMenuItem();
+        miABMAutonomos = new javax.swing.JMenuItem();
+        miABMVeterinarios = new javax.swing.JMenuItem();
         mbHistoriales = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,7 +69,7 @@ public class Main extends javax.swing.JFrame {
 
         mbProductos.setText("Productos");
 
-        miAlimento.setText("Alimento");
+        miAlimento.setText("Alimenticios");
         miAlimento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miAlimentoActionPerformed(evt);
@@ -106,6 +117,52 @@ public class Main extends javax.swing.JFrame {
         jMenuBar2.add(mbTurnos);
 
         mbArchivos.setText("Archivos");
+
+        miABMClientes.setText("ABM Clientes");
+        mbArchivos.add(miABMClientes);
+
+        miABMMascotas.setText("ABM Mascotas");
+        mbArchivos.add(miABMMascotas);
+
+        miABMProductos.setText("ABM Productos");
+
+        miABMAlimenticios.setText("Alimenticios");
+        miABMProductos.add(miABMAlimenticios);
+
+        miABMAccesorios.setText("Accesorios");
+        miABMProductos.add(miABMAccesorios);
+
+        miABMMedicos.setText("Medicos");
+        miABMMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMMedicosActionPerformed(evt);
+            }
+        });
+        miABMProductos.add(miABMMedicos);
+
+        mbArchivos.add(miABMProductos);
+
+        miABMProveedores.setText("ABM Proveedores");
+
+        miABMEmpresas.setText("Empresas");
+        miABMProveedores.add(miABMEmpresas);
+
+        miABMFarmaceuticos.setText("Farmaceuticos");
+        miABMProveedores.add(miABMFarmaceuticos);
+
+        miABMAutonomos.setText("Autonomos");
+        miABMProveedores.add(miABMAutonomos);
+
+        mbArchivos.add(miABMProveedores);
+
+        miABMVeterinarios.setText("ABM Veterinarios");
+        miABMVeterinarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMVeterinariosActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMVeterinarios);
+
         jMenuBar2.add(mbArchivos);
 
         mbHistoriales.setText("Historiales médicos");
@@ -140,6 +197,14 @@ public class Main extends javax.swing.JFrame {
     private void miFarmaceuticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miFarmaceuticosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_miFarmaceuticosActionPerformed
+
+    private void miABMMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMedicosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miABMMedicosActionPerformed
+
+    private void miABMVeterinariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMVeterinariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miABMVeterinariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,6 +251,17 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu mbProveedores;
     private javax.swing.JMenu mbTurnos;
     private javax.swing.JMenu mbVeterinarios;
+    private javax.swing.JMenuItem miABMAccesorios;
+    private javax.swing.JMenuItem miABMAlimenticios;
+    private javax.swing.JMenuItem miABMAutonomos;
+    private javax.swing.JMenuItem miABMClientes;
+    private javax.swing.JMenuItem miABMEmpresas;
+    private javax.swing.JMenuItem miABMFarmaceuticos;
+    private javax.swing.JMenuItem miABMMascotas;
+    private javax.swing.JMenuItem miABMMedicos;
+    private javax.swing.JMenu miABMProductos;
+    private javax.swing.JMenu miABMProveedores;
+    private javax.swing.JMenuItem miABMVeterinarios;
     private javax.swing.JMenuItem miAccesorios;
     private javax.swing.JMenuItem miAlimento;
     private javax.swing.JMenuItem miAutonomos;

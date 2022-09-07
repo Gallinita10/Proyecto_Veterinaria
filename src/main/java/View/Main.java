@@ -42,8 +42,11 @@ public class Main extends javax.swing.JFrame {
         miCitas = new javax.swing.JMenuItem();
         miVisitas = new javax.swing.JMenuItem();
         miIntervenciones = new javax.swing.JMenuItem();
+        mbArchivos = new javax.swing.JMenu();
+        mbHistoriales = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menú Principal");
 
         jLabel1.setText("Veterinaria");
 
@@ -102,6 +105,12 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar2.add(mbTurnos);
 
+        mbArchivos.setText("Archivos");
+        jMenuBar2.add(mbArchivos);
+
+        mbHistoriales.setText("Historiales médicos");
+        jMenuBar2.add(mbHistoriales);
+
         setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -109,16 +118,16 @@ public class Main extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(207, 207, 207)
+                .addGap(240, 240, 240)
                 .addComponent(jLabel1)
-                .addContainerGap(226, Short.MAX_VALUE))
+                .addContainerGap(504, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(81, 81, 81)
+                .addGap(71, 71, 71)
                 .addComponent(jLabel1)
-                .addContainerGap(238, Short.MAX_VALUE))
+                .addContainerGap(370, Short.MAX_VALUE))
         );
 
         pack();
@@ -170,7 +179,9 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenu mbArchivos;
     private javax.swing.JMenu mbClientes;
+    private javax.swing.JMenu mbHistoriales;
     private javax.swing.JMenu mbProductos;
     private javax.swing.JMenu mbProveedores;
     private javax.swing.JMenu mbTurnos;

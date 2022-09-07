@@ -54,6 +54,7 @@ public class Main extends javax.swing.JFrame {
         miABMFarmaceuticos = new javax.swing.JMenuItem();
         miABMAutonomos = new javax.swing.JMenuItem();
         miABMVeterinarios = new javax.swing.JMenuItem();
+        miABMSucursales = new javax.swing.JMenuItem();
         mbHistoriales = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -163,6 +164,9 @@ public class Main extends javax.swing.JFrame {
         });
         mbArchivos.add(miABMVeterinarios);
 
+        miABMSucursales.setText("ABM Sucursales");
+        mbArchivos.add(miABMSucursales);
+
         jMenuBar2.add(mbArchivos);
 
         mbHistoriales.setText("Historiales médicos");
@@ -261,6 +265,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem miABMMedicos;
     private javax.swing.JMenu miABMProductos;
     private javax.swing.JMenu miABMProveedores;
+    private javax.swing.JMenuItem miABMSucursales;
     private javax.swing.JMenuItem miABMVeterinarios;
     private javax.swing.JMenuItem miAccesorios;
     private javax.swing.JMenuItem miAlimento;

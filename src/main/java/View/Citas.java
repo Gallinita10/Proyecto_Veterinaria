@@ -30,7 +30,6 @@ public class Citas extends javax.swing.JFrame {
         txtMascota = new javax.swing.JTextField();
         txtDueño = new javax.swing.JTextField();
         txtVeterinario = new javax.swing.JTextField();
-        txtTipo = new javax.swing.JTextField();
         lblMascota = new javax.swing.JLabel();
         lblDueño = new javax.swing.JLabel();
         lblVeterinario = new javax.swing.JLabel();
@@ -39,6 +38,7 @@ public class Citas extends javax.swing.JFrame {
         btnMod = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
+        cbTipo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,7 +56,7 @@ public class Citas extends javax.swing.JFrame {
 
         lblVeterinario.setText("Veterinario");
 
-        lblTipo.setText("Tipo");
+        lblTipo.setText("Tipo de cita");
 
         btnAgregar.setText("Agregar");
 
@@ -65,6 +65,8 @@ public class Citas extends javax.swing.JFrame {
         btnEliminar.setText("Eliminar");
 
         btnVolver.setText("Volver");
+
+        cbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Control", "Vacunación", "Asistencia" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,9 +94,9 @@ public class Citas extends javax.swing.JFrame {
                         .addGap(45, 45, 45)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDueño)
+                            .addComponent(txtDueño, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
                             .addComponent(txtVeterinario)
-                            .addComponent(txtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(cbTipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(125, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -120,8 +122,8 @@ public class Citas extends javax.swing.JFrame {
                     .addComponent(lblVeterinario))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTipo))
+                    .addComponent(lblTipo)
+                    .addComponent(cbTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMod)
@@ -179,6 +181,7 @@ public class Citas extends javax.swing.JFrame {
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnMod;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JComboBox<String> cbTipo;
     private javax.swing.JLabel lblCitas;
     private javax.swing.JLabel lblDueño;
     private javax.swing.JLabel lblMascota;
@@ -186,7 +189,6 @@ public class Citas extends javax.swing.JFrame {
     private javax.swing.JLabel lblVeterinario;
     private javax.swing.JTextField txtDueño;
     private javax.swing.JTextField txtMascota;
-    private javax.swing.JTextField txtTipo;
     private javax.swing.JTextField txtVeterinario;
     // End of variables declaration//GEN-END:variables
 }

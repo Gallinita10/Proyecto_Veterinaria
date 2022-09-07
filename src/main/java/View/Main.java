@@ -55,6 +55,11 @@ public class Main extends javax.swing.JFrame {
         miABMAutonomos = new javax.swing.JMenuItem();
         miABMVeterinarios = new javax.swing.JMenuItem();
         miABMSucursales = new javax.swing.JMenuItem();
+        miABMQuirofanos = new javax.swing.JMenuItem();
+        miABMArtefactos = new javax.swing.JMenuItem();
+        miABMCiudad = new javax.swing.JMenuItem();
+        miABMProvincia = new javax.swing.JMenuItem();
+        miABMPais = new javax.swing.JMenuItem();
         mbHistoriales = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -167,6 +172,21 @@ public class Main extends javax.swing.JFrame {
         miABMSucursales.setText("ABM Sucursales");
         mbArchivos.add(miABMSucursales);
 
+        miABMQuirofanos.setText("ABM Quirofanos");
+        mbArchivos.add(miABMQuirofanos);
+
+        miABMArtefactos.setText("ABM Artefactos");
+        mbArchivos.add(miABMArtefactos);
+
+        miABMCiudad.setText("ABM Ciudad");
+        mbArchivos.add(miABMCiudad);
+
+        miABMProvincia.setText("ABM Provincia");
+        mbArchivos.add(miABMProvincia);
+
+        miABMPais.setText("ABM Pais");
+        mbArchivos.add(miABMPais);
+
         jMenuBar2.add(mbArchivos);
 
         mbHistoriales.setText("Historiales médicos");
@@ -257,14 +277,19 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu mbVeterinarios;
     private javax.swing.JMenuItem miABMAccesorios;
     private javax.swing.JMenuItem miABMAlimenticios;
+    private javax.swing.JMenuItem miABMArtefactos;
     private javax.swing.JMenuItem miABMAutonomos;
+    private javax.swing.JMenuItem miABMCiudad;
     private javax.swing.JMenuItem miABMClientes;
     private javax.swing.JMenuItem miABMEmpresas;
     private javax.swing.JMenuItem miABMFarmaceuticos;
     private javax.swing.JMenuItem miABMMascotas;
     private javax.swing.JMenuItem miABMMedicos;
+    private javax.swing.JMenuItem miABMPais;
     private javax.swing.JMenu miABMProductos;
     private javax.swing.JMenu miABMProveedores;
+    private javax.swing.JMenuItem miABMProvincia;
+    private javax.swing.JMenuItem miABMQuirofanos;
     private javax.swing.JMenuItem miABMSucursales;
     private javax.swing.JMenuItem miABMVeterinarios;
     private javax.swing.JMenuItem miAccesorios;

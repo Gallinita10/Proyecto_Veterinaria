@@ -161,6 +161,31 @@
                 <Property name="text" type="java.lang.String" value="ABM Sucursales"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMQuirofanos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Quirofanos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMArtefactos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Artefactos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMCiudad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Ciudad"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMProvincia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Provincia"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miABMPais">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ABM Pais"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mbHistoriales">

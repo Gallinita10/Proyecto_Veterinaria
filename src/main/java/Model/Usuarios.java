@@ -8,22 +8,23 @@ package Model;
  *
  * @author Enzo
  */
-public class Operarios {
+public class Usuarios {
     
-    protected int id_operario;
+    protected int id_Usuario;
     protected String nombre;
     protected String contraseña;
     protected String jornada;
     protected String nivel_permiso;
 
-    public int getId_operario() {
-        return id_operario;
+    public int getId_Usuario() {
+        return id_Usuario;
     }
 
-    public void setId_operario(int id_operario) {
-        this.id_operario = id_operario;
+    public void setId_Usuario(int id_Usuario) {
+        this.id_Usuario = id_Usuario;
     }
 
+ 
     public String getNombre() {
         return nombre;
     }
@@ -56,23 +57,25 @@ public class Operarios {
         this.nivel_permiso = nivel_permiso;
     }
 
-    public Operarios() {
+    public Usuarios() {
     }
 
-    public Operarios( String nombre, String contraseña, String jornada, String nivel_permiso) {
+    public Usuarios( String nombre, String contraseña, String jornada, String nivel_permiso) {
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.jornada = jornada;
         this.nivel_permiso = nivel_permiso;
     }
 
-    public Operarios(int id_operario, String nombre, String contraseña, String jornada, String nivel_permiso) {
-        this.id_operario = id_operario;
+    public Usuarios(int id_Usuario, String nombre, String contraseña, String jornada, String nivel_permiso) {
+        this.id_Usuario = id_Usuario;
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.jornada = jornada;
         this.nivel_permiso = nivel_permiso;
     }
+
+   
     
     
     

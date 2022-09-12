@@ -5,6 +5,8 @@
 package Control;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
@@ -13,7 +15,21 @@ import java.sql.Connection;
 public class Conexion {
     public static Connection getConexion(){
         
-        return null;
+        String conexionUrl = "jdbc:sqlserver://localhost:1433;"
+                +"database:DB_Veterinaria;"
+                +"user:DESKTOP-1PSC1H3\\Enzo;"
+                +"password: ;"
+                +"loginTimeout=30;"
+                +"integratedSecurity=true";
+        
+        
+        try{
+            Connection con = DriverManager.getConnection(conexionUrl);
+            return con;
+        }catch(SQLException ex){
+            System.out.println(ex.toString());
+            return null;
+        }
         
     }
 }

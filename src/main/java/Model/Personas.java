@@ -8,25 +8,13 @@ package Model;
  *
  * @author Enzo
  */
-public class Clientes extends Personas {
-    protected int id_cliente;
-    protected String telefono;
-
-    public int getId_cliente() {
-        return id_cliente;
-    }
-
-    public void setId_cliente(int id_cliente) {
-        this.id_cliente = id_cliente;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
+public class Personas {
+    
+    protected String dni;
+    protected String nombre;
+    protected String direccion;
+    protected String fecha_nacimiento;
+    protected String genero;
 
     public String getDni() {
         return dni;
@@ -68,19 +56,18 @@ public class Clientes extends Personas {
         this.genero = genero;
     }
 
-    public Clientes() {
+    public Personas() {
     }
 
-    public Clientes(String telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
-        this.telefono = telefono;
+    public Personas(String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.genero = genero;
     }
 
-    public Clientes(int id_cliente, String telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
-        this.id_cliente = id_cliente;
-        this.telefono = telefono;
-    }
-
+    
+    
     
 }

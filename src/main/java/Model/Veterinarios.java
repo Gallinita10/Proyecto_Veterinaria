@@ -8,12 +8,9 @@ package Model;
  *
  * @author User
  */
-public class Veterinarios {
+public class Veterinarios extends Personas {
     protected int id_veterinario;
-    protected String nombre;
     protected String Telefono;
-    protected String direccion;
-    protected String dni;
 
     public int getId_veterinario() {
         return id_veterinario;
@@ -21,14 +18,6 @@ public class Veterinarios {
 
     public void setId_veterinario(int id_veterinario) {
         this.id_veterinario = id_veterinario;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getTelefono() {
@@ -39,14 +28,6 @@ public class Veterinarios {
         this.Telefono = Telefono;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     public String getDni() {
         return dni;
     }
@@ -55,22 +36,52 @@ public class Veterinarios {
         this.dni = dni;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getFecha_nacimiento() {
+        return fecha_nacimiento;
+    }
+
+    public void setFecha_nacimiento(String fecha_nacimiento) {
+        this.fecha_nacimiento = fecha_nacimiento;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
     public Veterinarios() {
     }
 
-    public Veterinarios(String nombre, String Telefono, String direccion, String dni) {
-        this.nombre = nombre;
+    public Veterinarios(String Telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
+        super(dni, nombre, direccion, fecha_nacimiento, genero);
         this.Telefono = Telefono;
-        this.direccion = direccion;
-        this.dni = dni;
     }
 
-    public Veterinarios(int id_veterinario, String nombre, String Telefono, String direccion, String dni) {
+    public Veterinarios(int id_veterinario, String Telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
+        super(dni, nombre, direccion, fecha_nacimiento, genero);
         this.id_veterinario = id_veterinario;
-        this.nombre = nombre;
         this.Telefono = Telefono;
-        this.direccion = direccion;
-        this.dni = dni;
     }
+    
+    
     
 }

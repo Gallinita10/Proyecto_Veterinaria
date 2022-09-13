@@ -9,14 +9,23 @@ package Model;
  * @author Enzo
  */
 public class Proveedores_empresas extends Proveedores {
-    protected String marca;
+    protected String tipo;
+    protected String titular;
 
-    public String getMarca() {
-        return marca;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
     }
 
     public int getId_proveedor() {
@@ -54,16 +63,18 @@ public class Proveedores_empresas extends Proveedores {
     public Proveedores_empresas() {
     }
 
-    public Proveedores_empresas(String marca, int id_proveedor, String nombre, String direccion, String telefono) {
+    public Proveedores_empresas(String tipo, String titular, int id_proveedor, String nombre, String direccion, String telefono) {
         super(id_proveedor, nombre, direccion, telefono);
-        this.marca = marca;
+        this.tipo = tipo;
+        this.titular = titular;
     }
 
-    public Proveedores_empresas(String marca, String nombre, String direccion, String telefono) {
+    public Proveedores_empresas(String tipo, String titular, String nombre, String direccion, String telefono) {
         super(nombre, direccion, telefono);
-        this.marca = marca;
+        this.tipo = tipo;
+        this.titular = titular;
     }
-    
+
     
     
 }

@@ -9,14 +9,14 @@ package Model;
  * @author Enzo
  */
 public class Proveedores_autonomos extends Proveedores {
-    protected String Rubro;
+    protected String cuil;
 
-    public String getRubro() {
-        return Rubro;
+    public String getCuil() {
+        return cuil;
     }
 
-    public void setRubro(String Rubro) {
-        this.Rubro = Rubro;
+    public void setCuil(String cuil) {
+        this.cuil = cuil;
     }
 
     public int getId_proveedor() {
@@ -54,15 +54,16 @@ public class Proveedores_autonomos extends Proveedores {
     public Proveedores_autonomos() {
     }
 
-    public Proveedores_autonomos(String Rubro, int id_proveedor, String nombre, String direccion, String telefono) {
+    public Proveedores_autonomos(String cuil, int id_proveedor, String nombre, String direccion, String telefono) {
         super(id_proveedor, nombre, direccion, telefono);
-        this.Rubro = Rubro;
+        this.cuil = cuil;
     }
 
-    public Proveedores_autonomos(String Rubro, String nombre, String direccion, String telefono) {
+    public Proveedores_autonomos(String cuil, String nombre, String direccion, String telefono) {
         super(nombre, direccion, telefono);
-        this.Rubro = Rubro;
+        this.cuil = cuil;
     }
+
     
     
     

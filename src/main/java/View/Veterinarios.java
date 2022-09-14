@@ -41,6 +41,10 @@ public class Veterinarios extends javax.swing.JFrame {
         btnVolver = new javax.swing.JButton();
         lblMatricula = new javax.swing.JLabel();
         txtMatricula = new javax.swing.JTextField();
+        lblFechaNacimiento = new javax.swing.JLabel();
+        txtFechaNacimiento = new javax.swing.JTextField();
+        lblGenero = new javax.swing.JLabel();
+        cbGenero = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,44 +68,60 @@ public class Veterinarios extends javax.swing.JFrame {
 
         lblMatricula.setText("Matrícula");
 
+        lblFechaNacimiento.setText("Fecha de nacimiento");
+
+        lblGenero.setText("Genero");
+
+        cbGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "Otros" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 41, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(282, 282, 282)
+                        .addComponent(btnVolver))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblGenero)
+                            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnMod)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(24, 24, 24))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(171, 171, 171)
                         .addComponent(lblVeterinarios))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
+                        .addGap(27, 27, 27)
+                        .addComponent(lblFechaNacimiento)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtFechaNacimiento)
+                            .addComponent(cbGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(86, 86, 86)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNombre)
-                                    .addComponent(lblDir)
-                                    .addComponent(lblTel)
-                                    .addComponent(lblDNI)
-                                    .addComponent(lblMatricula))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtNombre)
-                                    .addComponent(txtDir)
-                                    .addComponent(txtDNI)
-                                    .addComponent(txtTel, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                                    .addComponent(txtMatricula)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnMod)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(117, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnVolver)
-                .addGap(17, 17, 17))
+                            .addComponent(lblNombre)
+                            .addComponent(lblDir)
+                            .addComponent(lblTel)
+                            .addComponent(lblDNI)
+                            .addComponent(lblMatricula))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtDir)
+                            .addComponent(txtDNI)
+                            .addComponent(txtTel)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
+                            .addComponent(txtMatricula))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,14 +149,21 @@ public class Veterinarios extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMatricula)
                     .addComponent(txtMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblFechaNacimiento)
+                    .addComponent(txtFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblGenero)
+                    .addComponent(cbGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMod)
                     .addComponent(btnAgregar)
                     .addComponent(btnEliminar))
-                .addGap(18, 18, 18)
-                .addComponent(btnVolver)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(btnVolver))
         );
 
         pack();
@@ -182,14 +209,18 @@ public class Veterinarios extends javax.swing.JFrame {
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnMod;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JComboBox<String> cbGenero;
     private javax.swing.JLabel lblDNI;
     private javax.swing.JLabel lblDir;
+    private javax.swing.JLabel lblFechaNacimiento;
+    private javax.swing.JLabel lblGenero;
     private javax.swing.JLabel lblMatricula;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblTel;
     private javax.swing.JLabel lblVeterinarios;
     private javax.swing.JTextField txtDNI;
     private javax.swing.JTextField txtDir;
+    private javax.swing.JTextField txtFechaNacimiento;
     private javax.swing.JTextField txtMatricula;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtTel;

@@ -13,11 +13,8 @@ import java.time.LocalTime;
  */
 public class Intervenciones {
     protected int id_intervencion;
-    protected Mascotas mascota;
-    protected Veterinarios veterinario;
     protected LocalDate fecha_intervencion;
     protected LocalTime hora_intervencion;
-    protected Quirofanos quirofano;
     protected String descripcion;
 
     public int getId_intervencion() {
@@ -26,22 +23,6 @@ public class Intervenciones {
 
     public void setId_intervencion(int id_intervencion) {
         this.id_intervencion = id_intervencion;
-    }
-
-    public Mascotas getMascota() {
-        return mascota;
-    }
-
-    public void setMascota(Mascotas mascota) {
-        this.mascota = mascota;
-    }
-
-    public Veterinarios getVeterinario() {
-        return veterinario;
-    }
-
-    public void setVeterinario(Veterinarios veterinario) {
-        this.veterinario = veterinario;
     }
 
     public LocalDate getFecha_intervencion() {
@@ -60,14 +41,6 @@ public class Intervenciones {
         this.hora_intervencion = hora_intervencion;
     }
 
-    public Quirofanos getQuirofano() {
-        return quirofano;
-    }
-
-    public void setQuirofano(Quirofanos quirofano) {
-        this.quirofano = quirofano;
-    }
-
     public String getDescripcion() {
         return descripcion;
     }
@@ -76,31 +49,22 @@ public class Intervenciones {
         this.descripcion = descripcion;
     }
 
-    
-    
     public Intervenciones() {
     }
 
-    public Intervenciones(int id_intervencion, Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano, String descripcion) {
+    public Intervenciones(int id_intervencion, LocalDate fecha_intervencion, LocalTime hora_intervencion, String descripcion) {
         this.id_intervencion = id_intervencion;
-        this.mascota = mascota;
-        this.veterinario = veterinario;
         this.fecha_intervencion = fecha_intervencion;
         this.hora_intervencion = hora_intervencion;
-        this.quirofano = quirofano;
         this.descripcion = descripcion;
     }
 
-    public Intervenciones(Mascotas mascota, Veterinarios veterinario, LocalDate fecha_intervencion, LocalTime hora_intervencion, Quirofanos quirofano, String descripcion) {
-        this.mascota = mascota;
-        this.veterinario = veterinario;
+    public Intervenciones(LocalDate fecha_intervencion, LocalTime hora_intervencion, String descripcion) {
         this.fecha_intervencion = fecha_intervencion;
         this.hora_intervencion = hora_intervencion;
-        this.quirofano = quirofano;
         this.descripcion = descripcion;
     }
 
-    
     
     
 }

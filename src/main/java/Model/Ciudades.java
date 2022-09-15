@@ -11,7 +11,6 @@ package Model;
 public class Ciudades {
     protected int id_ciudad;
     protected String nombre;
-    protected Provincias provincia;
 
     public int getId_ciudad() {
         return id_ciudad;
@@ -29,28 +28,17 @@ public class Ciudades {
         this.nombre = nombre;
     }
 
-    public Provincias getProvincia() {
-        return provincia;
-    }
-
-    public void setProvincia(Provincias provincia) {
-        this.provincia = provincia;
-    }
-
     public Ciudades() {
     }
 
-    public Ciudades(int id_ciudad, String nombre, Provincias provincia) {
+    public Ciudades(int id_ciudad, String nombre) {
         this.id_ciudad = id_ciudad;
         this.nombre = nombre;
-        this.provincia = provincia;
     }
 
-    public Ciudades(String nombre, Provincias provincia) {
+    public Ciudades(String nombre) {
         this.nombre = nombre;
-        this.provincia = provincia;
     }
-    
-    
+
     
 }

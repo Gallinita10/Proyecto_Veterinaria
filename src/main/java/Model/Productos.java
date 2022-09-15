@@ -13,6 +13,7 @@ public class Productos {
     protected int id_productos;
     protected String nombre_producto;
     protected float precio_producto;
+    protected String tipo_producto;
 
     public int getId_productos() {
         return id_productos;
@@ -38,19 +39,32 @@ public class Productos {
         this.precio_producto = precio_producto;
     }
 
+    public String getTipo_producto() {
+        return tipo_producto;
+    }
+
+    public void setTipo_producto(String tipo_producto) {
+        this.tipo_producto = tipo_producto;
+    }
+
+    
+    
     public Productos() {
     }
 
-    public Productos(int id_productos, String nombre_producto, float precio_producto) {
+    public Productos(int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
         this.id_productos = id_productos;
         this.nombre_producto = nombre_producto;
         this.precio_producto = precio_producto;
+        this.tipo_producto = tipo_producto;
     }
 
-    public Productos(String nombre_producto, float precio_producto) {
+    public Productos(String nombre_producto, float precio_producto, String tipo_producto) {
         this.nombre_producto = nombre_producto;
         this.precio_producto = precio_producto;
+        this.tipo_producto = tipo_producto;
     }
+
     
     
     

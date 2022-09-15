@@ -12,7 +12,6 @@ public class Sucursales {
     protected Stock id_stock;
     protected int id_sucursal;
     protected String direccion;
-    protected Ciudades ciudad;
 
     public Stock getId_stock() {
         return id_stock;
@@ -38,29 +37,22 @@ public class Sucursales {
         this.direccion = direccion;
     }
 
-    public Ciudades getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(Ciudades ciudad) {
-        this.ciudad = ciudad;
-    }
 
     public Sucursales() {
     }
 
-    public Sucursales(Stock id_stock, String direccion, Ciudades ciudad) {
-        this.id_stock = id_stock;
-        this.direccion = direccion;
-        this.ciudad = ciudad;
-    }
-
-    public Sucursales(Stock id_stock, int id_sucursal, String direccion, Ciudades ciudad) {
+    public Sucursales(Stock id_stock, int id_sucursal, String direccion) {
         this.id_stock = id_stock;
         this.id_sucursal = id_sucursal;
         this.direccion = direccion;
-        this.ciudad = ciudad;
     }
+
+    public Sucursales(int id_sucursal, String direccion) {
+        this.id_sucursal = id_sucursal;
+        this.direccion = direccion;
+    }
+
+    
     
     
 }

@@ -43,18 +43,28 @@ public class Productos_accesorios extends Productos{
         this.precio_producto = precio_producto;
     }
 
-    public Productos_accesorios(String descripcion) {
+    public String getTipo_producto() {
+        return tipo_producto;
     }
 
-    public Productos_accesorios(String descripcion, int id_productos, String nombre_producto, float precio_producto) {
-        super(id_productos, nombre_producto, precio_producto);
+    public void setTipo_producto(String tipo_producto) {
+        this.tipo_producto = tipo_producto;
+    }
+
+    public Productos_accesorios() {
+    }
+
+    public Productos_accesorios(String descripcion, int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
+        super(id_productos, nombre_producto, precio_producto, tipo_producto);
         this.descripcion = descripcion;
     }
 
-    public Productos_accesorios(String descripcion, String nombre_producto, float precio_producto) {
-        super(nombre_producto, precio_producto);
+    public Productos_accesorios(String descripcion, String nombre_producto, float precio_producto, String tipo_producto) {
+        super(nombre_producto, precio_producto, tipo_producto);
         this.descripcion = descripcion;
     }
-   
+
+    
+    
    
 }

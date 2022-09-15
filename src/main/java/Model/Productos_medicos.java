@@ -10,6 +10,7 @@ package Model;
  */
 public class Productos_medicos extends Productos{
     protected String fecha_caducidad;
+    
 
     public String getFecha_caducidad() {
         return fecha_caducidad;
@@ -43,18 +44,28 @@ public class Productos_medicos extends Productos{
         this.precio_producto = precio_producto;
     }
 
+    public String getTipo_producto() {
+        return tipo_producto;
+    }
+
+    public void setTipo_producto(String tipo_producto) {
+        this.tipo_producto = tipo_producto;
+    }
+
     public Productos_medicos() {
     }
 
-    public Productos_medicos(String fecha_caducidad, int id_productos, String nombre_producto, float precio_producto) {
-        super(id_productos, nombre_producto, precio_producto);
+    public Productos_medicos(String fecha_caducidad, int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
+        super(id_productos, nombre_producto, precio_producto, tipo_producto);
         this.fecha_caducidad = fecha_caducidad;
     }
 
-    public Productos_medicos(String fecha_caducidad, String nombre_producto, float precio_producto) {
-        super(nombre_producto, precio_producto);
+    public Productos_medicos(String fecha_caducidad, String nombre_producto, float precio_producto, String tipo_producto) {
+        super(nombre_producto, precio_producto, tipo_producto);
         this.fecha_caducidad = fecha_caducidad;
     }
+
+    
     
     
 }

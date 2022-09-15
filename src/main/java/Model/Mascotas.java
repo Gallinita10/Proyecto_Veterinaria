@@ -13,7 +13,6 @@ public class Mascotas {
     protected String nombre;
     protected String tipo_animal;
     protected int edad;
-    protected Clientes dueño;
 
     public int getId_mascota() {
         return id_mascota;
@@ -47,33 +46,22 @@ public class Mascotas {
         this.edad = edad;
     }
 
-    public Clientes getDueño() {
-        return dueño;
-    }
-
-    public void setDueño(Clientes dueño) {
-        this.dueño = dueño;
-    }
-
     public Mascotas() {
     }
 
-    public Mascotas(int id_mascota, String nombre, String tipo_animal, int edad, Clientes dueño) {
+    public Mascotas(int id_mascota, String nombre, String tipo_animal, int edad) {
         this.id_mascota = id_mascota;
         this.nombre = nombre;
         this.tipo_animal = tipo_animal;
         this.edad = edad;
-        this.dueño = dueño;
     }
 
-    public Mascotas(String nombre, String tipo_animal, int edad, Clientes dueño) {
+    public Mascotas(String nombre, String tipo_animal, int edad) {
         this.nombre = nombre;
         this.tipo_animal = tipo_animal;
         this.edad = edad;
-        this.dueño = dueño;
     }
-    
-    
+
     
     
 }

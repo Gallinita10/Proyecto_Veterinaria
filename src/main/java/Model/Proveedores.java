@@ -13,6 +13,7 @@ public class Proveedores {
     protected String nombre;
     protected String direccion;
     protected String telefono;
+    protected Tipo_proveedor id_tipo_proveedor;
 
     public int getId_proveedor() {
         return id_proveedor;
@@ -46,22 +47,31 @@ public class Proveedores {
         this.telefono = telefono;
     }
 
+    public Tipo_proveedor getId_tipo_proveedor() {
+        return id_tipo_proveedor;
+    }
+
+    public void setId_tipo_proveedor(Tipo_proveedor id_tipo_proveedor) {
+        this.id_tipo_proveedor = id_tipo_proveedor;
+    }
+    
     public Proveedores() {
     }
 
-    public Proveedores(int id_proveedor, String nombre, String direccion, String telefono) {
+    public Proveedores(int id_proveedor, String nombre, String direccion, String telefono, Tipo_proveedor id_tipo_proveedor) {
         this.id_proveedor = id_proveedor;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.id_tipo_proveedor = id_tipo_proveedor;
     }
 
-    public Proveedores(String nombre, String direccion, String telefono) {
+    public Proveedores(String nombre, String direccion, String telefono, Tipo_proveedor id_tipo_proveedor) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.id_tipo_proveedor = id_tipo_proveedor;
     }
-    
-    
+
     
 }

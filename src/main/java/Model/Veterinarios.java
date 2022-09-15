@@ -8,9 +8,9 @@ package Model;
  *
  * @author User
  */
-public class Veterinarios extends Personas {
+public class Veterinarios extends Usuarios {
     protected int id_veterinario;
-    protected String Telefono;
+    protected String matricula;
 
     public int getId_veterinario() {
         return id_veterinario;
@@ -20,12 +20,28 @@ public class Veterinarios extends Personas {
         this.id_veterinario = id_veterinario;
     }
 
-    public String getTelefono() {
-        return Telefono;
+    public String getMatricula() {
+        return matricula;
     }
 
-    public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public int getId_Usuario() {
+        return id_Usuario;
+    }
+
+    public void setId_Usuario(int id_Usuario) {
+        this.id_Usuario = id_Usuario;
+    }
+
+    public int getNivel_permiso() {
+        return nivel_permiso;
+    }
+
+    public void setNivel_permiso(int nivel_permiso) {
+        this.nivel_permiso = nivel_permiso;
     }
 
     public String getDni() {
@@ -52,6 +68,14 @@ public class Veterinarios extends Personas {
         this.direccion = direccion;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getFecha_nacimiento() {
         return fecha_nacimiento;
     }
@@ -71,17 +95,17 @@ public class Veterinarios extends Personas {
     public Veterinarios() {
     }
 
-    public Veterinarios(String Telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
-        this.Telefono = Telefono;
+    public Veterinarios(int id_veterinario, String matricula, int id_Usuario, int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
+        super(id_Usuario, nivel_permiso, dni, nombre, direccion, telefono, fecha_nacimiento, genero);
+        this.id_veterinario = id_veterinario;
+        this.matricula = matricula;
     }
 
-    public Veterinarios(int id_veterinario, String Telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
+    public Veterinarios(int id_veterinario, String matricula, int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
+        super(nivel_permiso, dni, nombre, direccion, telefono, fecha_nacimiento, genero);
         this.id_veterinario = id_veterinario;
-        this.Telefono = Telefono;
+        this.matricula = matricula;
     }
-    
-    
+
     
 }

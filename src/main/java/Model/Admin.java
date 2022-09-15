@@ -8,7 +8,7 @@ package Model;
  *
  * @author User
  */
-public class Admin extends Personas {
+public class Admin {
     
     protected int id_admin;
     protected String nombre_admin;
@@ -38,58 +38,16 @@ public class Admin extends Personas {
         this.contraseña = contraseña;
     }
 
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getFecha_nacimiento() {
-        return fecha_nacimiento;
-    }
-
-    public void setFecha_nacimiento(String fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
     public Admin() {
     }
 
-    public Admin(int id_admin, String nombre_admin, String contraseña, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
+    public Admin(int id_admin, String nombre_admin, String contraseña) {
         this.id_admin = id_admin;
         this.nombre_admin = nombre_admin;
         this.contraseña = contraseña;
     }
 
-    public Admin(String nombre_admin, String contraseña, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
+    public Admin(String nombre_admin, String contraseña) {
         this.nombre_admin = nombre_admin;
         this.contraseña = contraseña;
     }

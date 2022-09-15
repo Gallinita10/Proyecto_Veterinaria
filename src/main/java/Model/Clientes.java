@@ -8,9 +8,14 @@ package Model;
  *
  * @author Enzo
  */
-public class Clientes extends Personas {
+public class Clientes{
     protected int id_cliente;
+    protected String dni;
+    protected String nombre;
+    protected String direccion;
     protected String telefono;
+    protected String fecha_nacimiento;
+    protected String genero;
 
     public int getId_cliente() {
         return id_cliente;
@@ -18,14 +23,6 @@ public class Clientes extends Personas {
 
     public void setId_cliente(int id_cliente) {
         this.id_cliente = id_cliente;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     public String getDni() {
@@ -52,6 +49,14 @@ public class Clientes extends Personas {
         this.direccion = direccion;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getFecha_nacimiento() {
         return fecha_nacimiento;
     }
@@ -71,16 +76,24 @@ public class Clientes extends Personas {
     public Clientes() {
     }
 
-    public Clientes(String telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
-        this.telefono = telefono;
-    }
-
-    public Clientes(int id_cliente, String telefono, String dni, String nombre, String direccion, String fecha_nacimiento, String genero) {
-        super(dni, nombre, direccion, fecha_nacimiento, genero);
+    public Clientes(int id_cliente, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
         this.id_cliente = id_cliente;
+        this.dni = dni;
+        this.nombre = nombre;
+        this.direccion = direccion;
         this.telefono = telefono;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.genero = genero;
     }
 
-    
+    public Clientes(String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.genero = genero;
+    }
+
+   
 }

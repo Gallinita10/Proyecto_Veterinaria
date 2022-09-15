@@ -6,18 +6,28 @@ package Model;
 
 /**
  *
- * @author Enzo
+ * @author User
  */
-public class Usuarios{
+public class Gestores extends Usuarios {
     
-    protected int id_Usuario;
-    protected int nivel_permiso;
-    protected String dni;
-    protected String nombre;
-    protected String direccion;
-    protected String telefono;
-    protected String fecha_nacimiento;
-    protected String genero;
+    protected int id_gestor;
+    protected String jornada;
+
+    public int getId_gestor() {
+        return id_gestor;
+    }
+
+    public void setId_gestor(int id_gestor) {
+        this.id_gestor = id_gestor;
+    }
+
+    public String getJornada() {
+        return jornada;
+    }
+
+    public void setJornada(String jornada) {
+        this.jornada = jornada;
+    }
 
     public int getId_Usuario() {
         return id_Usuario;
@@ -83,28 +93,19 @@ public class Usuarios{
         this.genero = genero;
     }
 
-    public Usuarios() {
+    public Gestores() {
     }
 
-    public Usuarios(int id_Usuario, int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
-        this.id_Usuario = id_Usuario;
-        this.nivel_permiso = nivel_permiso;
-        this.dni = dni;
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.fecha_nacimiento = fecha_nacimiento;
-        this.genero = genero;
+    public Gestores(int id_gestor, String jornada, int id_Usuario, int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
+        super(id_Usuario, nivel_permiso, dni, nombre, direccion, telefono, fecha_nacimiento, genero);
+        this.id_gestor = id_gestor;
+        this.jornada = jornada;
     }
 
-    public Usuarios(int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
-        this.nivel_permiso = nivel_permiso;
-        this.dni = dni;
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.fecha_nacimiento = fecha_nacimiento;
-        this.genero = genero;
+    public Gestores(int id_gestor, String jornada, int nivel_permiso, String dni, String nombre, String direccion, String telefono, String fecha_nacimiento, String genero) {
+        super(nivel_permiso, dni, nombre, direccion, telefono, fecha_nacimiento, genero);
+        this.id_gestor = id_gestor;
+        this.jornada = jornada;
     }
 
     

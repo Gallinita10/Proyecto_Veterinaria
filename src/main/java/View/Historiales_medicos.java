@@ -6,14 +6,14 @@ package View;
 
 /**
  *
- * @author Enzo
+ * @author User
  */
-public class Intervenciones extends javax.swing.JFrame {
+public class Historiales_medicos extends javax.swing.JFrame {
 
     /**
-     * Creates new form Intervenciones
+     * Creates new form Historiales
      */
-    public Intervenciones() {
+    public Historiales_medicos() {
         initComponents();
     }
 
@@ -29,28 +29,28 @@ public class Intervenciones extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         lblMascota = new javax.swing.JLabel();
         txtMascota = new javax.swing.JTextField();
-        lblDescripcion = new javax.swing.JLabel();
-        txtDescripcion = new javax.swing.JTextField();
-        lblQuirofano = new javax.swing.JLabel();
-        txtQuirofano = new javax.swing.JTextField();
-        btnAgregar = new javax.swing.JButton();
+        lblCita = new javax.swing.JLabel();
+        txtCita = new javax.swing.JTextField();
+        lblVisita = new javax.swing.JLabel();
+        txtVisita = new javax.swing.JTextField();
+        lblIntervencion = new javax.swing.JLabel();
+        txtIntervencion = new javax.swing.JTextField();
         btnMod = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
-        lblVeterinario = new javax.swing.JLabel();
-        txtVeterinario = new javax.swing.JTextField();
+        btnAgregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Intervenciones");
+        jLabel1.setText("Historiales médicos");
 
         lblMascota.setText("Mascota");
 
-        lblDescripcion.setText("Descripción");
+        lblCita.setText("Cita");
 
-        lblQuirofano.setText("Quirófano");
+        lblVisita.setText("Visita");
 
-        btnAgregar.setText("Agregar");
+        lblIntervencion.setText("Intervención");
 
         btnMod.setText("Modificar");
 
@@ -58,14 +58,33 @@ public class Intervenciones extends javax.swing.JFrame {
 
         btnVolver.setText("Volver");
 
-        lblVeterinario.setText("Veterinario");
+        btnAgregar.setText("Agregar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMascota)
+                            .addComponent(lblCita, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblIntervencion))
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtMascota, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                            .addComponent(txtCita)
+                            .addComponent(txtVisita)
+                            .addComponent(txtIntervencion))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 35, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnVolver, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -75,61 +94,37 @@ public class Intervenciones extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(69, 69, 69)))
-                .addGap(30, 30, 30))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtVeterinario, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(172, 172, 172)
-                            .addComponent(jLabel1))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(61, 61, 61)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(lblMascota)
-                                    .addGap(36, 36, 36)
-                                    .addComponent(txtMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblDescripcion)
-                                        .addComponent(lblQuirofano)
-                                        .addComponent(lblVeterinario))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtDescripcion)
-                                        .addComponent(txtQuirofano)))))))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addGap(17, 17, 17))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMascota)
                     .addComponent(txtMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDescripcion)
-                    .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                    .addComponent(lblCita)
+                    .addComponent(txtCita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblQuirofano)
-                    .addComponent(txtQuirofano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                    .addComponent(txtVisita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblVisita))
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblVeterinario)
-                    .addComponent(txtVeterinario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                    .addComponent(lblIntervencion)
+                    .addComponent(txtIntervencion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMod)
                     .addComponent(btnAgregar)
                     .addComponent(btnEliminar))
                 .addGap(18, 18, 18)
                 .addComponent(btnVolver)
-                .addGap(24, 24, 24))
+                .addContainerGap())
         );
 
         pack();
@@ -152,20 +147,21 @@ public class Intervenciones extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Intervenciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Historiales_medicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Intervenciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Historiales_medicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Intervenciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Historiales_medicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Intervenciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Historiales_medicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Intervenciones().setVisible(true);
+                new Historiales_medicos().setVisible(true);
             }
         });
     }
@@ -176,13 +172,13 @@ public class Intervenciones extends javax.swing.JFrame {
     private javax.swing.JButton btnMod;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblDescripcion;
+    private javax.swing.JLabel lblCita;
+    private javax.swing.JLabel lblIntervencion;
     private javax.swing.JLabel lblMascota;
-    private javax.swing.JLabel lblQuirofano;
-    private javax.swing.JLabel lblVeterinario;
-    private javax.swing.JTextField txtDescripcion;
+    private javax.swing.JLabel lblVisita;
+    private javax.swing.JTextField txtCita;
+    private javax.swing.JTextField txtIntervencion;
     private javax.swing.JTextField txtMascota;
-    private javax.swing.JTextField txtQuirofano;
-    private javax.swing.JTextField txtVeterinario;
+    private javax.swing.JTextField txtVisita;
     // End of variables declaration//GEN-END:variables
 }

@@ -31,20 +31,20 @@ public class Usuarios extends javax.swing.JFrame {
         txtNombreUsuario = new javax.swing.JTextField();
         lblContraseña = new javax.swing.JLabel();
         txtContraseña = new javax.swing.JTextField();
-        lblNombre = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
         lblFechaNacimiento = new javax.swing.JLabel();
         txtFechaNacimiento = new javax.swing.JTextField();
         lblGenero = new javax.swing.JLabel();
         cbGenero = new javax.swing.JComboBox<>();
-        lblJornada = new javax.swing.JLabel();
-        txtJornada = new javax.swing.JTextField();
         lblNivelPermiso = new javax.swing.JLabel();
-        cbNivelPermiso = new javax.swing.JComboBox<>();
         btnVolver = new javax.swing.JButton();
         btnAgregar = new javax.swing.JButton();
         btnMod = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
+        txtNivelPermiso = new javax.swing.JTextField();
+        lblDni = new javax.swing.JLabel();
+        txtDni = new javax.swing.JTextField();
+        lblDireccion = new javax.swing.JLabel();
+        txtDireccion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,19 +54,13 @@ public class Usuarios extends javax.swing.JFrame {
 
         lblContraseña.setText("Contraseña");
 
-        lblNombre.setText("Nombre");
-
         lblFechaNacimiento.setText("Fecha de nacimiento");
 
         lblGenero.setText("Genero");
 
         cbGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "Otros" }));
 
-        lblJornada.setText("Jornada");
-
         lblNivelPermiso.setText("Nivel de permiso");
-
-        cbNivelPermiso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         btnVolver.setText("Volver");
 
@@ -76,47 +70,57 @@ public class Usuarios extends javax.swing.JFrame {
 
         btnEliminar.setText("Eliminar");
 
+        lblDni.setText("DNI");
+
+        lblDireccion.setText("Direccion");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(179, 179, 179)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNombreUsuario)
-                            .addComponent(lblContraseña)
-                            .addComponent(lblNombre)
-                            .addComponent(lblFechaNacimiento)
-                            .addComponent(lblNivelPermiso)
-                            .addComponent(lblJornada)
-                            .addComponent(lblGenero))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNombreUsuario)
-                            .addComponent(txtContraseña)
-                            .addComponent(txtNombre)
-                            .addComponent(txtFechaNacimiento)
-                            .addComponent(cbGenero, 0, 188, Short.MAX_VALUE)
-                            .addComponent(txtJornada)
-                            .addComponent(cbNivelPermiso, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 75, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnVolver, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnMod)
                         .addGap(18, 18, 18)
                         .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(73, 73, 73))
-                    .addComponent(btnVolver, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(73, 73, 73)))
                 .addGap(48, 48, 48))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtNivelPermiso, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(179, 179, 179)
+                            .addComponent(jLabel1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(51, 51, 51)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblNombreUsuario)
+                                        .addComponent(lblContraseña)
+                                        .addComponent(lblFechaNacimiento)
+                                        .addComponent(lblNivelPermiso)
+                                        .addComponent(lblDni, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(lblGenero))
+                                    .addGap(18, 18, 18))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addContainerGap()
+                                    .addComponent(lblDireccion)
+                                    .addGap(77, 77, 77)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtNombreUsuario)
+                                .addComponent(txtContraseña)
+                                .addComponent(txtFechaNacimiento)
+                                .addComponent(cbGenero, 0, 188, Short.MAX_VALUE)
+                                .addComponent(txtDni)
+                                .addComponent(txtDireccion)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,11 +135,11 @@ public class Usuarios extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblContraseña)
                     .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDni)
+                    .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFechaNacimiento)
                     .addComponent(txtFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -145,12 +149,12 @@ public class Usuarios extends javax.swing.JFrame {
                     .addComponent(cbGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblJornada)
-                    .addComponent(txtJornada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(lblDireccion)
+                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNivelPermiso)
-                    .addComponent(cbNivelPermiso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNivelPermiso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMod)
@@ -158,7 +162,7 @@ public class Usuarios extends javax.swing.JFrame {
                     .addComponent(btnEliminar))
                 .addGap(18, 18, 18)
                 .addComponent(btnVolver)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -205,19 +209,19 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JButton btnMod;
     private javax.swing.JButton btnVolver;
     private javax.swing.JComboBox<String> cbGenero;
-    private javax.swing.JComboBox<String> cbNivelPermiso;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblContraseña;
+    private javax.swing.JLabel lblDireccion;
+    private javax.swing.JLabel lblDni;
     private javax.swing.JLabel lblFechaNacimiento;
     private javax.swing.JLabel lblGenero;
-    private javax.swing.JLabel lblJornada;
     private javax.swing.JLabel lblNivelPermiso;
-    private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNombreUsuario;
     private javax.swing.JTextField txtContraseña;
+    private javax.swing.JTextField txtDireccion;
+    private javax.swing.JTextField txtDni;
     private javax.swing.JTextField txtFechaNacimiento;
-    private javax.swing.JTextField txtJornada;
-    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtNivelPermiso;
     private javax.swing.JTextField txtNombreUsuario;
     // End of variables declaration//GEN-END:variables
 }

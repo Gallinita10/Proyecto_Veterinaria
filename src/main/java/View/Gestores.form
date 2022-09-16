@@ -24,111 +24,87 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="lblCitas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNombreUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblJornada" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtNombreUsuario" pref="188" max="32767" attributes="0"/>
+                          <Component id="jComboBox1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnVolver" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="btnAgregar" min="-2" pref="81" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btnMod" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btnEliminar" min="-2" pref="81" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="btnVolver" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="lblSucursal" max="32767" attributes="0"/>
-                  <Component id="lblMascota" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblVeterinario" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblTipo" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtMascota" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
-                  <Component id="txtVeterinario" alignment="0" max="32767" attributes="0"/>
-                  <Component id="cbTipo" alignment="0" pref="115" max="32767" attributes="0"/>
-                  <Component id="txtSucursal" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="lblCitas" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtMascota" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblMascota" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtVeterinario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblVeterinario" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblTipo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNombreUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNombreUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblSucursal" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSucursal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblJornada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="45" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnMod" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnAgregar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lblCitas">
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Citas"/>
+        <Property name="text" type="java.lang.String" value="Gestores"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtMascota">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtVeterinario">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtVeterinarioActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblMascota">
+    <Component class="javax.swing.JLabel" name="lblNombreUsuario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Mascota"/>
+        <Property name="text" type="java.lang.String" value="Usuario"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblVeterinario">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Veterinario"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="txtNombreUsuario">
     </Component>
-    <Component class="javax.swing.JLabel" name="lblTipo">
+    <Component class="javax.swing.JButton" name="btnVolver">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tipo de cita"/>
+        <Property name="text" type="java.lang.String" value="Volver"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnAgregar">
@@ -146,31 +122,23 @@
         <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnVolver">
+    <Component class="javax.swing.JLabel" name="lblJornada">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Volver"/>
+        <Property name="text" type="java.lang.String" value="Jornada"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbTipo">
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Control"/>
-            <StringItem index="1" value="Vacunaci&#xf3;n"/>
-            <StringItem index="2" value="Asistencia"/>
+          <StringArray count="2">
+            <StringItem index="0" value="Ma&#xf1;ana"/>
+            <StringItem index="1" value="Tarde"/>
           </StringArray>
         </Property>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblSucursal">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Sucursal"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtSucursal">
     </Component>
   </SubComponents>
 </Form>

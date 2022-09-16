@@ -38,30 +38,24 @@
                                   <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblPrecio" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="76" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="txtPrecio" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
                                   <Component id="txtNombre" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblFechaCaducidad" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblLaboratorio" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="lblFechaCaducidad" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtFechaCaducidad" max="32767" attributes="0"/>
-                                  <Component id="txtLaboratorio" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="txtFechaCaducidad" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="btnAgregar" min="-2" pref="81" max="-2" attributes="0"/>
@@ -69,13 +63,11 @@
                       <Component id="btnModificar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnEliminar" min="-2" pref="81" max="-2" attributes="0"/>
-                      <EmptySpace min="101" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="btnVolver" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -99,11 +91,6 @@
                   <Component id="lblFechaCaducidad" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtFechaCaducidad" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblLaboratorio" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtLaboratorio" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnAgregar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -112,7 +99,7 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -143,13 +130,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtFechaCaducidad">
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblLaboratorio">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Laboratorio"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtLaboratorio">
     </Component>
     <Component class="javax.swing.JButton" name="btnAgregar">
       <Properties>

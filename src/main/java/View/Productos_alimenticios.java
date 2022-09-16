@@ -33,8 +33,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
         lblPrecioKilo = new javax.swing.JLabel();
         lblPrecioBolsa = new javax.swing.JLabel();
         lblPrecioProveedor = new javax.swing.JLabel();
-        lblEmpresa = new javax.swing.JLabel();
-        lblAutonomo = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
@@ -45,9 +43,7 @@ public class Productos_alimenticios extends javax.swing.JFrame {
         txtPrecioKilo = new javax.swing.JTextField();
         txtFechaCaducidad = new javax.swing.JTextField();
         txtPrecioBolsa = new javax.swing.JTextField();
-        txtEmpresa = new javax.swing.JTextField();
         txtPrecioProveedor = new javax.swing.JTextField();
-        txtAutonomo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,10 +63,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
 
         lblPrecioProveedor.setText("Precio proveedor");
 
-        lblEmpresa.setText("Empresa");
-
-        lblAutonomo.setText("Autonomo");
-
         btnAgregar.setText("Agregar");
 
         btnModificar.setText("Modificar");
@@ -82,12 +74,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
         txtPrecioProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPrecioProveedorActionPerformed(evt);
-            }
-        });
-
-        txtAutonomo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAutonomoActionPerformed(evt);
             }
         });
 
@@ -107,6 +93,22 @@ public class Productos_alimenticios extends javax.swing.JFrame {
                                 .addComponent(lblFechaCaducidad)
                                 .addGap(18, 18, 18)
                                 .addComponent(txtFechaCaducidad, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblNombre)
+                                    .addComponent(lblPrecio)
+                                    .addComponent(lblPeso)
+                                    .addComponent(lblPrecioKilo)
+                                    .addComponent(lblPrecioBolsa)
+                                    .addComponent(lblPrecioProveedor))
+                                .addGap(33, 33, 33)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtPrecioBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPrecioKilo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPrecioProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -117,27 +119,7 @@ public class Productos_alimenticios extends javax.swing.JFrame {
                                     .addComponent(btnModificar)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNombre)
-                                    .addComponent(lblPrecio)
-                                    .addComponent(lblPeso)
-                                    .addComponent(lblPrecioKilo)
-                                    .addComponent(lblPrecioBolsa)
-                                    .addComponent(lblPrecioProveedor)
-                                    .addComponent(lblEmpresa)
-                                    .addComponent(lblAutonomo))
-                                .addGap(33, 33, 33)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtAutonomo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecioBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecioKilo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecioProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -173,22 +155,14 @@ public class Productos_alimenticios extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPrecioProveedor)
                     .addComponent(txtPrecioProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblEmpresa))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblAutonomo)
-                    .addComponent(txtAutonomo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgregar)
                     .addComponent(btnModificar)
                     .addComponent(btnEliminar))
                 .addGap(11, 11, 11)
                 .addComponent(btnVolver)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
@@ -197,10 +171,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
     private void txtPrecioProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioProveedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPrecioProveedorActionPerformed
-
-    private void txtAutonomoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAutonomoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAutonomoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,8 +214,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
     private javax.swing.JButton btnModificar;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblAutonomo;
-    private javax.swing.JLabel lblEmpresa;
     private javax.swing.JLabel lblFechaCaducidad;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPeso;
@@ -253,8 +221,6 @@ public class Productos_alimenticios extends javax.swing.JFrame {
     private javax.swing.JLabel lblPrecioBolsa;
     private javax.swing.JLabel lblPrecioKilo;
     private javax.swing.JLabel lblPrecioProveedor;
-    private javax.swing.JTextField txtAutonomo;
-    private javax.swing.JTextField txtEmpresa;
     private javax.swing.JTextField txtFechaCaducidad;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPeso;

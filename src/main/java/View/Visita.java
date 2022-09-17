@@ -40,7 +40,7 @@ public class Visita extends javax.swing.JFrame {
         lblTipoVisita = new javax.swing.JLabel();
         txtTipoVisita = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Visitas médicas");
 
@@ -63,6 +63,11 @@ public class Visita extends javax.swing.JFrame {
         btnEliminar.setText("Eliminar");
 
         btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
+            }
+        });
 
         lblTipoVisita.setText("Tipo de visita");
 
@@ -144,6 +149,11 @@ public class Visita extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtVeterinarioActionPerformed
 
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -175,7 +185,7 @@ public class Visita extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Visita().setVisible(true);
+            //    new Visita().setVisible(true);
             }
         });
     }

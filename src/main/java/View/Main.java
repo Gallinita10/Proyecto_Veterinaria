@@ -28,46 +28,53 @@ public class Main extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        mbClientes = new javax.swing.JMenu();
-        mbVeterinarios = new javax.swing.JMenu();
-        mbProductos = new javax.swing.JMenu();
+        mbCliente = new javax.swing.JMenu();
+        mbVeterinario = new javax.swing.JMenu();
+        mbProducto = new javax.swing.JMenu();
         miAlimento = new javax.swing.JMenuItem();
-        miAccesorios = new javax.swing.JMenuItem();
-        miMedicos = new javax.swing.JMenuItem();
-        mbProveedores = new javax.swing.JMenu();
-        mbTurnos = new javax.swing.JMenu();
+        miAccesorio = new javax.swing.JMenuItem();
+        miMedico = new javax.swing.JMenuItem();
+        mbProveedor = new javax.swing.JMenu();
+        mbTurno = new javax.swing.JMenu();
         miCitas = new javax.swing.JMenuItem();
         miVisitas = new javax.swing.JMenuItem();
         miIntervenciones = new javax.swing.JMenuItem();
         mbArchivos = new javax.swing.JMenu();
-        miABMClientes = new javax.swing.JMenuItem();
-        miABMMascotas = new javax.swing.JMenuItem();
-        miABMProductos = new javax.swing.JMenu();
-        miABMAlimenticios = new javax.swing.JMenuItem();
-        miABMAccesorios = new javax.swing.JMenuItem();
-        miABMMedicos = new javax.swing.JMenuItem();
-        miABMProveedores = new javax.swing.JMenuItem();
-        miABMVeterinarios = new javax.swing.JMenuItem();
-        miABMSucursales = new javax.swing.JMenuItem();
-        miABMQuirofanos = new javax.swing.JMenuItem();
-        miABMArtefactos = new javax.swing.JMenuItem();
+        miABMCliente = new javax.swing.JMenuItem();
+        miABMMascota = new javax.swing.JMenuItem();
+        miABMProducto = new javax.swing.JMenu();
+        miABMAlimenticio = new javax.swing.JMenuItem();
+        miABMAccesorio = new javax.swing.JMenuItem();
+        miABMMedico = new javax.swing.JMenuItem();
+        miABMProveedor = new javax.swing.JMenuItem();
+        miABMTipoProveedor = new javax.swing.JMenuItem();
+        miABMVeterinario = new javax.swing.JMenuItem();
+        miABMSucursal = new javax.swing.JMenuItem();
+        miABMQuirofano = new javax.swing.JMenuItem();
+        miABMArtefacto = new javax.swing.JMenuItem();
         miABMCiudad = new javax.swing.JMenuItem();
         miABMProvincia = new javax.swing.JMenuItem();
         miABMPais = new javax.swing.JMenuItem();
-        mbHistoriales = new javax.swing.JMenu();
+        miABMGestor = new javax.swing.JMenuItem();
+        miABMUsuario = new javax.swing.JMenuItem();
+        miABMAdmin = new javax.swing.JMenuItem();
+        miABMCita = new javax.swing.JMenuItem();
+        miABMVisita = new javax.swing.JMenuItem();
+        miABMIntervencion = new javax.swing.JMenuItem();
+        mbHistorial = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú Principal");
 
         jLabel1.setText("Veterinaria");
 
-        mbClientes.setText("Clientes");
-        jMenuBar2.add(mbClientes);
+        mbCliente.setText("Clientes");
+        jMenuBar2.add(mbCliente);
 
-        mbVeterinarios.setText("Veterinarios");
-        jMenuBar2.add(mbVeterinarios);
+        mbVeterinario.setText("Veterinarios");
+        jMenuBar2.add(mbVeterinario);
 
-        mbProductos.setText("Productos");
+        mbProducto.setText("Productos");
 
         miAlimento.setText("Alimenticios");
         miAlimento.addActionListener(new java.awt.event.ActionListener() {
@@ -75,96 +82,207 @@ public class Main extends javax.swing.JFrame {
                 miAlimentoActionPerformed(evt);
             }
         });
-        mbProductos.add(miAlimento);
+        mbProducto.add(miAlimento);
 
-        miAccesorios.setText("Accesorios");
-        mbProductos.add(miAccesorios);
+        miAccesorio.setText("Accesorios");
+        mbProducto.add(miAccesorio);
 
-        miMedicos.setText("Medicos");
-        mbProductos.add(miMedicos);
+        miMedico.setText("Medicos");
+        miMedico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMedicoActionPerformed(evt);
+            }
+        });
+        mbProducto.add(miMedico);
 
-        jMenuBar2.add(mbProductos);
+        jMenuBar2.add(mbProducto);
 
-        mbProveedores.setText("Proveedores");
-        jMenuBar2.add(mbProveedores);
+        mbProveedor.setText("Proveedores");
+        jMenuBar2.add(mbProveedor);
 
-        mbTurnos.setText("Turnos");
+        mbTurno.setText("Turnos");
 
         miCitas.setText("Citas");
-        mbTurnos.add(miCitas);
+        mbTurno.add(miCitas);
 
         miVisitas.setText("Visitas");
-        mbTurnos.add(miVisitas);
+        mbTurno.add(miVisitas);
 
         miIntervenciones.setText("Intervenciones");
-        mbTurnos.add(miIntervenciones);
+        mbTurno.add(miIntervenciones);
 
-        jMenuBar2.add(mbTurnos);
+        jMenuBar2.add(mbTurno);
 
         mbArchivos.setText("Archivos");
 
-        miABMClientes.setText("ABM Clientes");
-        mbArchivos.add(miABMClientes);
-
-        miABMMascotas.setText("ABM Mascotas");
-        miABMMascotas.addActionListener(new java.awt.event.ActionListener() {
+        miABMCliente.setText("ABM Cliente");
+        miABMCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miABMMascotasActionPerformed(evt);
+                miABMClienteActionPerformed(evt);
             }
         });
-        mbArchivos.add(miABMMascotas);
+        mbArchivos.add(miABMCliente);
 
-        miABMProductos.setText("ABM Productos");
-
-        miABMAlimenticios.setText("Alimenticios");
-        miABMProductos.add(miABMAlimenticios);
-
-        miABMAccesorios.setText("Accesorios");
-        miABMProductos.add(miABMAccesorios);
-
-        miABMMedicos.setText("Medicos");
-        miABMMedicos.addActionListener(new java.awt.event.ActionListener() {
+        miABMMascota.setText("ABM Mascota");
+        miABMMascota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miABMMedicosActionPerformed(evt);
+                miABMMascotaActionPerformed(evt);
             }
         });
-        miABMProductos.add(miABMMedicos);
+        mbArchivos.add(miABMMascota);
 
-        mbArchivos.add(miABMProductos);
+        miABMProducto.setText("ABM Producto");
 
-        miABMProveedores.setText("ABM Proveedores");
-        mbArchivos.add(miABMProveedores);
-
-        miABMVeterinarios.setText("ABM Veterinarios");
-        miABMVeterinarios.addActionListener(new java.awt.event.ActionListener() {
+        miABMAlimenticio.setText("Alimenticio");
+        miABMAlimenticio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miABMVeterinariosActionPerformed(evt);
+                miABMAlimenticioActionPerformed(evt);
             }
         });
-        mbArchivos.add(miABMVeterinarios);
+        miABMProducto.add(miABMAlimenticio);
 
-        miABMSucursales.setText("ABM Sucursales");
-        mbArchivos.add(miABMSucursales);
+        miABMAccesorio.setText("Accesorio");
+        miABMAccesorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMAccesorioActionPerformed(evt);
+            }
+        });
+        miABMProducto.add(miABMAccesorio);
 
-        miABMQuirofanos.setText("ABM Quirofanos");
-        mbArchivos.add(miABMQuirofanos);
+        miABMMedico.setText("Medico");
+        miABMMedico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMMedicoActionPerformed(evt);
+            }
+        });
+        miABMProducto.add(miABMMedico);
 
-        miABMArtefactos.setText("ABM Artefactos");
-        mbArchivos.add(miABMArtefactos);
+        mbArchivos.add(miABMProducto);
+
+        miABMProveedor.setText("ABM Proveedor");
+        miABMProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMProveedorActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMProveedor);
+
+        miABMTipoProveedor.setText("ABM Tipo Proveedor");
+        miABMTipoProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMTipoProveedorActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMTipoProveedor);
+
+        miABMVeterinario.setText("ABM Veterinario");
+        miABMVeterinario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMVeterinarioActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMVeterinario);
+
+        miABMSucursal.setText("ABM Sucursal");
+        miABMSucursal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMSucursalActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMSucursal);
+
+        miABMQuirofano.setText("ABM Quirofano");
+        miABMQuirofano.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMQuirofanoActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMQuirofano);
+
+        miABMArtefacto.setText("ABM Artefacto");
+        miABMArtefacto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMArtefactoActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMArtefacto);
 
         miABMCiudad.setText("ABM Ciudad");
+        miABMCiudad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMCiudadActionPerformed(evt);
+            }
+        });
         mbArchivos.add(miABMCiudad);
 
         miABMProvincia.setText("ABM Provincia");
+        miABMProvincia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMProvinciaActionPerformed(evt);
+            }
+        });
         mbArchivos.add(miABMProvincia);
 
         miABMPais.setText("ABM Pais");
+        miABMPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMPaisActionPerformed(evt);
+            }
+        });
         mbArchivos.add(miABMPais);
+
+        miABMGestor.setText("ABM Gestor");
+        miABMGestor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMGestorActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMGestor);
+
+        miABMUsuario.setText("ABM Usuario");
+        miABMUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMUsuarioActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMUsuario);
+
+        miABMAdmin.setText("ABM Admin");
+        miABMAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMAdminActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMAdmin);
+
+        miABMCita.setText("ABM Cita");
+        miABMCita.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMCitaActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMCita);
+
+        miABMVisita.setText("ABM Visita");
+        miABMVisita.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMVisitaActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMVisita);
+
+        miABMIntervencion.setText("ABM Intervencion");
+        miABMIntervencion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMIntervencionActionPerformed(evt);
+            }
+        });
+        mbArchivos.add(miABMIntervencion);
 
         jMenuBar2.add(mbArchivos);
 
-        mbHistoriales.setText("Historiales médicos");
-        jMenuBar2.add(mbHistoriales);
+        mbHistorial.setText("Historiales médicos");
+        jMenuBar2.add(mbHistorial);
 
         setJMenuBar(jMenuBar2);
 
@@ -192,19 +310,129 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_miAlimentoActionPerformed
 
-    private void miABMMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMedicosActionPerformed
+    private void miABMMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMedicoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_miABMMedicosActionPerformed
+        Producto_medico medico = new Producto_medico();
+        medico.setVisible(true);
+    }//GEN-LAST:event_miABMMedicoActionPerformed
 
-    private void miABMVeterinariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMVeterinariosActionPerformed
+    private void miABMVeterinarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMVeterinarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_miABMVeterinariosActionPerformed
+        Veterinario veterinario = new Veterinario();
+        veterinario.setVisible(true);
+    }//GEN-LAST:event_miABMVeterinarioActionPerformed
 
-    private void miABMMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMascotasActionPerformed
+    private void miABMMascotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMascotaActionPerformed
         // TODO add your handling code here:
         Mascota mascota = new Mascota();
         mascota.setVisible(true);
-    }//GEN-LAST:event_miABMMascotasActionPerformed
+    }//GEN-LAST:event_miABMMascotaActionPerformed
+
+    private void miABMClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMClienteActionPerformed
+        // TODO add your handling code here:
+        Cliente cliente = new Cliente();
+        cliente.setVisible(true);
+    }//GEN-LAST:event_miABMClienteActionPerformed
+
+    private void miABMAlimenticioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMAlimenticioActionPerformed
+        // TODO add your handling code here:
+        Producto_alimenticio alimento = new Producto_alimenticio();
+        alimento.setVisible(true);
+    }//GEN-LAST:event_miABMAlimenticioActionPerformed
+
+    private void miABMAccesorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMAccesorioActionPerformed
+        // TODO add your handling code here:
+        Producto_accesorio accesorio = new Producto_accesorio();
+        accesorio.setVisible(true);
+    }//GEN-LAST:event_miABMAccesorioActionPerformed
+
+    private void miABMProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMProveedorActionPerformed
+        // TODO add your handling code here:
+        Proveedor proveedor = new Proveedor();
+        proveedor.setVisible(true);
+    }//GEN-LAST:event_miABMProveedorActionPerformed
+
+    private void miABMSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMSucursalActionPerformed
+        // TODO add your handling code here:
+        Sucursal sucursal = new Sucursal();
+        sucursal.setVisible(true);
+    }//GEN-LAST:event_miABMSucursalActionPerformed
+
+    private void miABMQuirofanoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMQuirofanoActionPerformed
+        // TODO add your handling code here:
+        Quirofano quirofano = new Quirofano();
+        quirofano.setVisible(true);
+    }//GEN-LAST:event_miABMQuirofanoActionPerformed
+
+    private void miABMArtefactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMArtefactoActionPerformed
+        // TODO add your handling code here:
+        Artefacto artefacto = new Artefacto();
+        artefacto.setVisible(true);
+    }//GEN-LAST:event_miABMArtefactoActionPerformed
+
+    private void miABMCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMCiudadActionPerformed
+        // TODO add your handling code here:
+        Ciudad ciudad = new Ciudad();
+        ciudad.setVisible(true);
+    }//GEN-LAST:event_miABMCiudadActionPerformed
+
+    private void miABMProvinciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMProvinciaActionPerformed
+        // TODO add your handling code here:
+        Provincia provincia = new Provincia();
+        provincia.setVisible(true);
+    }//GEN-LAST:event_miABMProvinciaActionPerformed
+
+    private void miABMPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMPaisActionPerformed
+        // TODO add your handling code here:
+        Pais pais = new Pais();
+        pais.setVisible(true);
+    }//GEN-LAST:event_miABMPaisActionPerformed
+
+    private void miABMTipoProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMTipoProveedorActionPerformed
+        // TODO add your handling code here:
+        Tipo_proveedor tipo_proveedor = new Tipo_proveedor();
+        tipo_proveedor.setVisible(true);
+    }//GEN-LAST:event_miABMTipoProveedorActionPerformed
+
+    private void miABMUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMUsuarioActionPerformed
+        // TODO add your handling code here:
+        Usuario usuario = new Usuario();
+        usuario.setVisible(true);
+    }//GEN-LAST:event_miABMUsuarioActionPerformed
+
+    private void miMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMedicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miMedicoActionPerformed
+
+    private void miABMGestorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMGestorActionPerformed
+        // TODO add your handling code here:
+        Gestor gestor = new Gestor();
+        gestor.setVisible(true);
+    }//GEN-LAST:event_miABMGestorActionPerformed
+
+    private void miABMAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMAdminActionPerformed
+        // TODO add your handling code here:
+        Admin admin = new Admin();
+        admin.setVisible(true);
+    }//GEN-LAST:event_miABMAdminActionPerformed
+
+    private void miABMCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMCitaActionPerformed
+        // TODO add your handling code here:
+        Cita cita = new Cita();
+        cita.setVisible(true);
+    }//GEN-LAST:event_miABMCitaActionPerformed
+
+    private void miABMVisitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMVisitaActionPerformed
+        // TODO add your handling code here:
+        Visita visita = new Visita();
+        visita.setVisible(true);
+    }//GEN-LAST:event_miABMVisitaActionPerformed
+
+    private void miABMIntervencionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMIntervencionActionPerformed
+        // TODO add your handling code here:
+        Intervencion intervencion = new Intervencion();
+        intervencion.setVisible(true);
+    }//GEN-LAST:event_miABMIntervencionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -245,31 +473,38 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenu mbArchivos;
-    private javax.swing.JMenu mbClientes;
-    private javax.swing.JMenu mbHistoriales;
-    private javax.swing.JMenu mbProductos;
-    private javax.swing.JMenu mbProveedores;
-    private javax.swing.JMenu mbTurnos;
-    private javax.swing.JMenu mbVeterinarios;
-    private javax.swing.JMenuItem miABMAccesorios;
-    private javax.swing.JMenuItem miABMAlimenticios;
-    private javax.swing.JMenuItem miABMArtefactos;
+    private javax.swing.JMenu mbCliente;
+    private javax.swing.JMenu mbHistorial;
+    private javax.swing.JMenu mbProducto;
+    private javax.swing.JMenu mbProveedor;
+    private javax.swing.JMenu mbTurno;
+    private javax.swing.JMenu mbVeterinario;
+    private javax.swing.JMenuItem miABMAccesorio;
+    private javax.swing.JMenuItem miABMAdmin;
+    private javax.swing.JMenuItem miABMAlimenticio;
+    private javax.swing.JMenuItem miABMArtefacto;
+    private javax.swing.JMenuItem miABMCita;
     private javax.swing.JMenuItem miABMCiudad;
-    private javax.swing.JMenuItem miABMClientes;
-    private javax.swing.JMenuItem miABMMascotas;
-    private javax.swing.JMenuItem miABMMedicos;
+    private javax.swing.JMenuItem miABMCliente;
+    private javax.swing.JMenuItem miABMGestor;
+    private javax.swing.JMenuItem miABMIntervencion;
+    private javax.swing.JMenuItem miABMMascota;
+    private javax.swing.JMenuItem miABMMedico;
     private javax.swing.JMenuItem miABMPais;
-    private javax.swing.JMenu miABMProductos;
-    private javax.swing.JMenuItem miABMProveedores;
+    private javax.swing.JMenu miABMProducto;
+    private javax.swing.JMenuItem miABMProveedor;
     private javax.swing.JMenuItem miABMProvincia;
-    private javax.swing.JMenuItem miABMQuirofanos;
-    private javax.swing.JMenuItem miABMSucursales;
-    private javax.swing.JMenuItem miABMVeterinarios;
-    private javax.swing.JMenuItem miAccesorios;
+    private javax.swing.JMenuItem miABMQuirofano;
+    private javax.swing.JMenuItem miABMSucursal;
+    private javax.swing.JMenuItem miABMTipoProveedor;
+    private javax.swing.JMenuItem miABMUsuario;
+    private javax.swing.JMenuItem miABMVeterinario;
+    private javax.swing.JMenuItem miABMVisita;
+    private javax.swing.JMenuItem miAccesorio;
     private javax.swing.JMenuItem miAlimento;
     private javax.swing.JMenuItem miCitas;
     private javax.swing.JMenuItem miIntervenciones;
-    private javax.swing.JMenuItem miMedicos;
+    private javax.swing.JMenuItem miMedico;
     private javax.swing.JMenuItem miVisitas;
     // End of variables declaration//GEN-END:variables
 }

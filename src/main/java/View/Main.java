@@ -46,10 +46,7 @@ public class Main extends javax.swing.JFrame {
         miABMAlimenticios = new javax.swing.JMenuItem();
         miABMAccesorios = new javax.swing.JMenuItem();
         miABMMedicos = new javax.swing.JMenuItem();
-        miABMProveedores = new javax.swing.JMenu();
-        miABMEmpresas = new javax.swing.JMenuItem();
-        miABMFarmaceuticos = new javax.swing.JMenuItem();
-        miABMAutonomos = new javax.swing.JMenuItem();
+        miABMProveedores = new javax.swing.JMenuItem();
         miABMVeterinarios = new javax.swing.JMenuItem();
         miABMSucursales = new javax.swing.JMenuItem();
         miABMQuirofanos = new javax.swing.JMenuItem();
@@ -110,6 +107,11 @@ public class Main extends javax.swing.JFrame {
         mbArchivos.add(miABMClientes);
 
         miABMMascotas.setText("ABM Mascotas");
+        miABMMascotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miABMMascotasActionPerformed(evt);
+            }
+        });
         mbArchivos.add(miABMMascotas);
 
         miABMProductos.setText("ABM Productos");
@@ -131,16 +133,6 @@ public class Main extends javax.swing.JFrame {
         mbArchivos.add(miABMProductos);
 
         miABMProveedores.setText("ABM Proveedores");
-
-        miABMEmpresas.setText("Empresas");
-        miABMProveedores.add(miABMEmpresas);
-
-        miABMFarmaceuticos.setText("Farmaceuticos");
-        miABMProveedores.add(miABMFarmaceuticos);
-
-        miABMAutonomos.setText("Autonomos");
-        miABMProveedores.add(miABMAutonomos);
-
         mbArchivos.add(miABMProveedores);
 
         miABMVeterinarios.setText("ABM Veterinarios");
@@ -208,6 +200,12 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_miABMVeterinariosActionPerformed
 
+    private void miABMMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMascotasActionPerformed
+        // TODO add your handling code here:
+        Mascota mascota = new Mascota();
+        mascota.setVisible(true);
+    }//GEN-LAST:event_miABMMascotasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -256,16 +254,13 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem miABMAccesorios;
     private javax.swing.JMenuItem miABMAlimenticios;
     private javax.swing.JMenuItem miABMArtefactos;
-    private javax.swing.JMenuItem miABMAutonomos;
     private javax.swing.JMenuItem miABMCiudad;
     private javax.swing.JMenuItem miABMClientes;
-    private javax.swing.JMenuItem miABMEmpresas;
-    private javax.swing.JMenuItem miABMFarmaceuticos;
     private javax.swing.JMenuItem miABMMascotas;
     private javax.swing.JMenuItem miABMMedicos;
     private javax.swing.JMenuItem miABMPais;
     private javax.swing.JMenu miABMProductos;
-    private javax.swing.JMenu miABMProveedores;
+    private javax.swing.JMenuItem miABMProveedores;
     private javax.swing.JMenuItem miABMProvincia;
     private javax.swing.JMenuItem miABMQuirofanos;
     private javax.swing.JMenuItem miABMSucursales;

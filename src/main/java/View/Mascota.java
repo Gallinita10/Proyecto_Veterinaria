@@ -38,7 +38,7 @@ public class Mascota extends javax.swing.JFrame {
         lblEdad = new javax.swing.JLabel();
         txtEdad = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblMascotas.setText("Mascotas");
 
@@ -53,6 +53,11 @@ public class Mascota extends javax.swing.JFrame {
         btnEliminar.setText("Eliminar");
 
         btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
+            }
+        });
 
         lblEdad.setText("Edad");
 
@@ -126,6 +131,11 @@ public class Mascota extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -157,7 +167,7 @@ public class Mascota extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Mascota().setVisible(true);
+              //  new Mascota().setVisible(true);
             }
         });
     }

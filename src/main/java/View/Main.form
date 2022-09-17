@@ -80,6 +80,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="ABM Mascotas"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miABMMascotasActionPerformed"/>
+              </Events>
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="miABMProductos">
               <Properties>
@@ -106,28 +109,11 @@
                 </MenuItem>
               </SubComponents>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="miABMProveedores">
+            <MenuItem class="javax.swing.JMenuItem" name="miABMProveedores">
               <Properties>
                 <Property name="text" type="java.lang.String" value="ABM Proveedores"/>
               </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="miABMEmpresas">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Empresas"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="miABMFarmaceuticos">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Farmaceuticos"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="miABMAutonomos">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Autonomos"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="miABMVeterinarios">
               <Properties>
                 <Property name="text" type="java.lang.String" value="ABM Veterinarios"/>

@@ -43,26 +43,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Proveedores"/>
           </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="miEmpresas">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Empresas"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="miFarmaceuticos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Farmaceuticos"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miFarmaceuticosActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="miAutonomos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Autonomos"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mbTurnos">
           <Properties>

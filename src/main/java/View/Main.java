@@ -35,9 +35,6 @@ public class Main extends javax.swing.JFrame {
         miAccesorios = new javax.swing.JMenuItem();
         miMedicos = new javax.swing.JMenuItem();
         mbProveedores = new javax.swing.JMenu();
-        miEmpresas = new javax.swing.JMenuItem();
-        miFarmaceuticos = new javax.swing.JMenuItem();
-        miAutonomos = new javax.swing.JMenuItem();
         mbTurnos = new javax.swing.JMenu();
         miCitas = new javax.swing.JMenuItem();
         miVisitas = new javax.swing.JMenuItem();
@@ -92,21 +89,6 @@ public class Main extends javax.swing.JFrame {
         jMenuBar2.add(mbProductos);
 
         mbProveedores.setText("Proveedores");
-
-        miEmpresas.setText("Empresas");
-        mbProveedores.add(miEmpresas);
-
-        miFarmaceuticos.setText("Farmaceuticos");
-        miFarmaceuticos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miFarmaceuticosActionPerformed(evt);
-            }
-        });
-        mbProveedores.add(miFarmaceuticos);
-
-        miAutonomos.setText("Autonomos");
-        mbProveedores.add(miAutonomos);
-
         jMenuBar2.add(mbProveedores);
 
         mbTurnos.setText("Turnos");
@@ -218,10 +200,6 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_miAlimentoActionPerformed
 
-    private void miFarmaceuticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miFarmaceuticosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_miFarmaceuticosActionPerformed
-
     private void miABMMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMedicosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_miABMMedicosActionPerformed
@@ -294,10 +272,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem miABMVeterinarios;
     private javax.swing.JMenuItem miAccesorios;
     private javax.swing.JMenuItem miAlimento;
-    private javax.swing.JMenuItem miAutonomos;
     private javax.swing.JMenuItem miCitas;
-    private javax.swing.JMenuItem miEmpresas;
-    private javax.swing.JMenuItem miFarmaceuticos;
     private javax.swing.JMenuItem miIntervenciones;
     private javax.swing.JMenuItem miMedicos;
     private javax.swing.JMenuItem miVisitas;

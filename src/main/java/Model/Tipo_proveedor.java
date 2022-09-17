@@ -12,7 +12,7 @@ public class Tipo_proveedor {
     
     protected int id_tipo_proveedor;
     protected String titular;
-    protected String cuil;
+    protected String cuit;
     protected int id_laboratorio;
 
     public int getId_tipo_proveedor() {
@@ -31,12 +31,12 @@ public class Tipo_proveedor {
         this.titular = titular;
     }
 
-    public String getCuil() {
-        return cuil;
+    public String getCuit() {
+        return cuit;
     }
 
-    public void setCuil(String cuil) {
-        this.cuil = cuil;
+    public void setCuit(String cuit) {
+        this.cuit = cuit;
     }
 
     public int getId_laboratorio() {
@@ -50,19 +50,19 @@ public class Tipo_proveedor {
     public Tipo_proveedor() {
     }
 
-    public Tipo_proveedor(int id_tipo_proveedor, String titular, String cuil, int id_laboratorio) {
+    public Tipo_proveedor(int id_tipo_proveedor, String titular, String cuit, int id_laboratorio) {
         this.id_tipo_proveedor = id_tipo_proveedor;
         this.titular = titular;
-        this.cuil = cuil;
+        this.cuit = cuit;
         this.id_laboratorio = id_laboratorio;
     }
 
-    public Tipo_proveedor(String titular, String cuil, int id_laboratorio) {
+    public Tipo_proveedor(String titular, String cuit, int id_laboratorio) {
         this.titular = titular;
-        this.cuil = cuil;
+        this.cuit = cuit;
         this.id_laboratorio = id_laboratorio;
     }
-    
+
     
     
     

@@ -13,6 +13,7 @@ public class Mascota {
     protected String nombre;
     protected String tipo_animal;
     protected int edad;
+    protected String genero;
 
     public int getId_mascota() {
         return id_mascota;
@@ -46,21 +47,35 @@ public class Mascota {
         this.edad = edad;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+    
+    
+
     public Mascota() {
     }
 
-    public Mascota(int id_mascota, String nombre, String tipo_animal, int edad) {
+    public Mascota(int id_mascota, String nombre, String tipo_animal, int edad, String genero) {
         this.id_mascota = id_mascota;
         this.nombre = nombre;
         this.tipo_animal = tipo_animal;
         this.edad = edad;
+        this.genero = genero;
     }
 
-    public Mascota(String nombre, String tipo_animal, int edad) {
+    public Mascota(String nombre, String tipo_animal, int edad, String genero) {
         this.nombre = nombre;
         this.tipo_animal = tipo_animal;
         this.edad = edad;
+        this.genero = genero;
     }
+
+    
 
     
     

@@ -17,8 +17,8 @@ public class Conexion {
         
         String conexionUrl = "jdbc:sqlserver://localhost:1433;"
                 +"database:DB_Veterinaria;"
-                +"user:DESKTOP-1PSC1H3\\Enzo;"
-                +"password: ;"
+                +"user:SuperU;"
+                +"password:contrasuperu1;"
                 +"loginTimeout=30;"
                 +"integratedSecurity=true";
         

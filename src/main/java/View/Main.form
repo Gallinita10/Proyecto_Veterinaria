@@ -14,38 +14,54 @@
             <Property name="text" type="java.lang.String" value="Veterinarios"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="mbProducto">
+        <Menu class="javax.swing.JMenu" name="mbVentas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Productos"/>
+            <Property name="text" type="java.lang.String" value="Ventas"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="miAlimento">
+            <Menu class="javax.swing.JMenu" name="miProductos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Alimenticios"/>
+                <Property name="text" type="java.lang.String" value="Productos"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miAlimentoActionPerformed"/>
-              </Events>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miAlimento">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Alimento"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miAccesorios">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Accesorios"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miMedicos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Medicos"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="miProveedores">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Proveedores"/>
+              </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="miAccesorio">
+            <MenuItem class="javax.swing.JMenuItem" name="miStock">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Accesorios"/>
+                <Property name="text" type="java.lang.String" value="Stock"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="miMedico">
+            <MenuItem class="javax.swing.JMenuItem" name="miFacturacion">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Medicos"/>
+                <Property name="text" type="java.lang.String" value="Facturacion"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miMedicoActionPerformed"/>
-              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miPresupuesto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Presupuestos"/>
+              </Properties>
             </MenuItem>
           </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="mbProveedor">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Proveedores"/>
-          </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mbTurno">
           <Properties>
@@ -209,14 +225,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miABMUsuarioActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="miABMAdmin">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="ABM Admin"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miABMAdminActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="miABMCita">
               <Properties>
                 <Property name="text" type="java.lang.String" value="ABM Cita"/>
@@ -275,28 +283,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="240" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="504" max="32767" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="800" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="370" max="32767" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="457" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
-  <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Veterinaria"/>
-      </Properties>
-    </Component>
-  </SubComponents>
 </Form>

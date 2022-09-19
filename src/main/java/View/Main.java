@@ -26,15 +26,18 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         mbCliente = new javax.swing.JMenu();
         mbVeterinario = new javax.swing.JMenu();
-        mbProducto = new javax.swing.JMenu();
+        mbVentas = new javax.swing.JMenu();
+        miProductos = new javax.swing.JMenu();
         miAlimento = new javax.swing.JMenuItem();
-        miAccesorio = new javax.swing.JMenuItem();
-        miMedico = new javax.swing.JMenuItem();
-        mbProveedor = new javax.swing.JMenu();
+        miAccesorios = new javax.swing.JMenuItem();
+        miMedicos = new javax.swing.JMenuItem();
+        miProveedores = new javax.swing.JMenuItem();
+        miStock = new javax.swing.JMenuItem();
+        miFacturacion = new javax.swing.JMenuItem();
+        miPresupuesto = new javax.swing.JMenuItem();
         mbTurno = new javax.swing.JMenu();
         miCitas = new javax.swing.JMenuItem();
         miVisitas = new javax.swing.JMenuItem();
@@ -57,7 +60,6 @@ public class Main extends javax.swing.JFrame {
         miABMPais = new javax.swing.JMenuItem();
         miABMGestor = new javax.swing.JMenuItem();
         miABMUsuario = new javax.swing.JMenuItem();
-        miABMAdmin = new javax.swing.JMenuItem();
         miABMCita = new javax.swing.JMenuItem();
         miABMVisita = new javax.swing.JMenuItem();
         miABMIntervencion = new javax.swing.JMenuItem();
@@ -66,39 +68,40 @@ public class Main extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú Principal");
 
-        jLabel1.setText("Veterinaria");
-
         mbCliente.setText("Clientes");
         jMenuBar2.add(mbCliente);
 
         mbVeterinario.setText("Veterinarios");
         jMenuBar2.add(mbVeterinario);
 
-        mbProducto.setText("Productos");
+        mbVentas.setText("Ventas");
 
-        miAlimento.setText("Alimenticios");
-        miAlimento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miAlimentoActionPerformed(evt);
-            }
-        });
-        mbProducto.add(miAlimento);
+        miProductos.setText("Productos");
 
-        miAccesorio.setText("Accesorios");
-        mbProducto.add(miAccesorio);
+        miAlimento.setText("Alimento");
+        miProductos.add(miAlimento);
 
-        miMedico.setText("Medicos");
-        miMedico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miMedicoActionPerformed(evt);
-            }
-        });
-        mbProducto.add(miMedico);
+        miAccesorios.setText("Accesorios");
+        miProductos.add(miAccesorios);
 
-        jMenuBar2.add(mbProducto);
+        miMedicos.setText("Medicos");
+        miProductos.add(miMedicos);
 
-        mbProveedor.setText("Proveedores");
-        jMenuBar2.add(mbProveedor);
+        mbVentas.add(miProductos);
+
+        miProveedores.setText("Proveedores");
+        mbVentas.add(miProveedores);
+
+        miStock.setText("Stock");
+        mbVentas.add(miStock);
+
+        miFacturacion.setText("Facturacion");
+        mbVentas.add(miFacturacion);
+
+        miPresupuesto.setText("Presupuestos");
+        mbVentas.add(miPresupuesto);
+
+        jMenuBar2.add(mbVentas);
 
         mbTurno.setText("Turnos");
 
@@ -247,14 +250,6 @@ public class Main extends javax.swing.JFrame {
         });
         mbArchivos.add(miABMUsuario);
 
-        miABMAdmin.setText("ABM Admin");
-        miABMAdmin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miABMAdminActionPerformed(evt);
-            }
-        });
-        mbArchivos.add(miABMAdmin);
-
         miABMCita.setText("ABM Cita");
         miABMCita.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -290,25 +285,15 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addComponent(jLabel1)
-                .addContainerGap(504, Short.MAX_VALUE))
+            .addGap(0, 800, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel1)
-                .addContainerGap(370, Short.MAX_VALUE))
+            .addGap(0, 457, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void miAlimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAlimentoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_miAlimentoActionPerformed
 
     private void miABMMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMMedicoActionPerformed
         // TODO add your handling code here:
@@ -400,21 +385,11 @@ public class Main extends javax.swing.JFrame {
         usuario.setVisible(true);
     }//GEN-LAST:event_miABMUsuarioActionPerformed
 
-    private void miMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMedicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_miMedicoActionPerformed
-
     private void miABMGestorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMGestorActionPerformed
         // TODO add your handling code here:
         Gestor gestor = new Gestor();
         gestor.setVisible(true);
     }//GEN-LAST:event_miABMGestorActionPerformed
-
-    private void miABMAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMAdminActionPerformed
-        // TODO add your handling code here:
-        Admin admin = new Admin();
-        admin.setVisible(true);
-    }//GEN-LAST:event_miABMAdminActionPerformed
 
     private void miABMCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miABMCitaActionPerformed
         // TODO add your handling code here:
@@ -470,17 +445,14 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenu mbArchivos;
     private javax.swing.JMenu mbCliente;
     private javax.swing.JMenu mbHistorial;
-    private javax.swing.JMenu mbProducto;
-    private javax.swing.JMenu mbProveedor;
     private javax.swing.JMenu mbTurno;
+    private javax.swing.JMenu mbVentas;
     private javax.swing.JMenu mbVeterinario;
     private javax.swing.JMenuItem miABMAccesorio;
-    private javax.swing.JMenuItem miABMAdmin;
     private javax.swing.JMenuItem miABMAlimenticio;
     private javax.swing.JMenuItem miABMArtefacto;
     private javax.swing.JMenuItem miABMCita;
@@ -500,11 +472,16 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem miABMUsuario;
     private javax.swing.JMenuItem miABMVeterinario;
     private javax.swing.JMenuItem miABMVisita;
-    private javax.swing.JMenuItem miAccesorio;
+    private javax.swing.JMenuItem miAccesorios;
     private javax.swing.JMenuItem miAlimento;
     private javax.swing.JMenuItem miCitas;
+    private javax.swing.JMenuItem miFacturacion;
     private javax.swing.JMenuItem miIntervenciones;
-    private javax.swing.JMenuItem miMedico;
+    private javax.swing.JMenuItem miMedicos;
+    private javax.swing.JMenuItem miPresupuesto;
+    private javax.swing.JMenu miProductos;
+    private javax.swing.JMenuItem miProveedores;
+    private javax.swing.JMenuItem miStock;
     private javax.swing.JMenuItem miVisitas;
     // End of variables declaration//GEN-END:variables
 }

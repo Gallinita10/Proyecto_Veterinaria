@@ -13,7 +13,6 @@ public class Producto_alimenticio extends Producto {
     protected String fecha_caducidad;
     protected float precio_por_kilo;
     protected float precio_por_bolsa;
-    protected float precio_proveedor;
 
     public String getPeso_alimento() {
         return peso_alimento;
@@ -47,13 +46,6 @@ public class Producto_alimenticio extends Producto {
         this.precio_por_bolsa = precio_por_bolsa;
     }
 
-    public float getPrecio_proveedor() {
-        return precio_proveedor;
-    }
-
-    public void setPrecio_proveedor(float precio_proveedor) {
-        this.precio_proveedor = precio_proveedor;
-    }
 
     public int getId_productos() {
         return id_productos;
@@ -71,13 +63,23 @@ public class Producto_alimenticio extends Producto {
         this.nombre_producto = nombre_producto;
     }
 
-    public float getPrecio_producto() {
-        return precio_producto;
+    public float getPrecio_costo() {
+        return precio_costo;
     }
 
-    public void setPrecio_producto(float precio_producto) {
-        this.precio_producto = precio_producto;
+    public void setPrecio_costo(float precio_costo) {
+        this.precio_costo = precio_costo;
     }
+
+    public float getPrecio_venta() {
+        return precio_venta;
+    }
+
+    public void setPrecio_venta(float precio_venta) {
+        this.precio_venta = precio_venta;
+    }
+
+   
 
     public String getTipo_producto() {
         return tipo_producto;
@@ -90,25 +92,23 @@ public class Producto_alimenticio extends Producto {
     public Producto_alimenticio() {
     }
 
-    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, float precio_proveedor, int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
-        super(id_productos, nombre_producto, precio_producto, tipo_producto);
+    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, int id_productos, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+        super(id_productos, nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.peso_alimento = peso_alimento;
         this.fecha_caducidad = fecha_caducidad;
         this.precio_por_kilo = precio_por_kilo;
         this.precio_por_bolsa = precio_por_bolsa;
-        this.precio_proveedor = precio_proveedor;
     }
 
-    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, float precio_proveedor, String nombre_producto, float precio_producto, String tipo_producto) {
-        super(nombre_producto, precio_producto, tipo_producto);
+    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+        super(nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.peso_alimento = peso_alimento;
         this.fecha_caducidad = fecha_caducidad;
         this.precio_por_kilo = precio_por_kilo;
         this.precio_por_bolsa = precio_por_bolsa;
-        this.precio_proveedor = precio_proveedor;
     }
-    
-    
+
+
     
 }
 

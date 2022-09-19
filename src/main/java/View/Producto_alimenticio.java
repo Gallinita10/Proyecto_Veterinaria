@@ -32,7 +32,6 @@ public class Producto_alimenticio extends javax.swing.JFrame {
         lblFechaCaducidad = new javax.swing.JLabel();
         lblPrecioKilo = new javax.swing.JLabel();
         lblPrecioBolsa = new javax.swing.JLabel();
-        lblPrecioProveedor = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
@@ -43,7 +42,6 @@ public class Producto_alimenticio extends javax.swing.JFrame {
         txtPrecioKilo = new javax.swing.JTextField();
         txtFechaCaducidad = new javax.swing.JTextField();
         txtPrecioBolsa = new javax.swing.JTextField();
-        txtPrecioProveedor = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -61,8 +59,6 @@ public class Producto_alimenticio extends javax.swing.JFrame {
 
         lblPrecioBolsa.setText("Precio por bolsa");
 
-        lblPrecioProveedor.setText("Precio proveedor");
-
         btnAgregar.setText("Agregar");
 
         btnModificar.setText("Modificar");
@@ -73,12 +69,6 @@ public class Producto_alimenticio extends javax.swing.JFrame {
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
-            }
-        });
-
-        txtPrecioProveedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPrecioProveedorActionPerformed(evt);
             }
         });
 
@@ -104,16 +94,14 @@ public class Producto_alimenticio extends javax.swing.JFrame {
                                     .addComponent(lblPrecio)
                                     .addComponent(lblPeso)
                                     .addComponent(lblPrecioKilo)
-                                    .addComponent(lblPrecioBolsa)
-                                    .addComponent(lblPrecioProveedor))
-                                .addGap(33, 33, 33)
+                                    .addComponent(lblPrecioBolsa))
+                                .addGap(38, 38, 38)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtPrecioBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtPrecioKilo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecioProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -156,11 +144,7 @@ public class Producto_alimenticio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPrecioBolsa)
                     .addComponent(txtPrecioBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPrecioProveedor)
-                    .addComponent(txtPrecioProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgregar)
                     .addComponent(btnModificar)
@@ -172,10 +156,6 @@ public class Producto_alimenticio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtPrecioProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioProveedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPrecioProveedorActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         // TODO add your handling code here:
@@ -232,14 +212,12 @@ public class Producto_alimenticio extends javax.swing.JFrame {
     private javax.swing.JLabel lblPrecio;
     private javax.swing.JLabel lblPrecioBolsa;
     private javax.swing.JLabel lblPrecioKilo;
-    private javax.swing.JLabel lblPrecioProveedor;
     private javax.swing.JTextField txtFechaCaducidad;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPeso;
     private javax.swing.JTextField txtPrecio;
     private javax.swing.JTextField txtPrecioBolsa;
     private javax.swing.JTextField txtPrecioKilo;
-    private javax.swing.JTextField txtPrecioProveedor;
     // End of variables declaration//GEN-END:variables
 
 }

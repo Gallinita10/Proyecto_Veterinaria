@@ -35,14 +35,23 @@ public class Producto_accesorio extends Producto{
         this.nombre_producto = nombre_producto;
     }
 
-    public float getPrecio_producto() {
-        return precio_producto;
+    public float getPrecio_costo() {
+        return precio_costo;
     }
 
-    public void setPrecio_producto(float precio_producto) {
-        this.precio_producto = precio_producto;
+    public void setPrecio_costo(float precio_costo) {
+        this.precio_costo = precio_costo;
     }
 
+    public float getPrecio_venta() {
+        return precio_venta;
+    }
+
+    public void setPrecio_venta(float precio_venta) {
+        this.precio_venta = precio_venta;
+    }
+
+    
     public String getTipo_producto() {
         return tipo_producto;
     }
@@ -54,15 +63,17 @@ public class Producto_accesorio extends Producto{
     public Producto_accesorio() {
     }
 
-    public Producto_accesorio(String descripcion, int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
-        super(id_productos, nombre_producto, precio_producto, tipo_producto);
+    public Producto_accesorio(String descripcion, int id_productos, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+        super(id_productos, nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.descripcion = descripcion;
     }
 
-    public Producto_accesorio(String descripcion, String nombre_producto, float precio_producto, String tipo_producto) {
-        super(nombre_producto, precio_producto, tipo_producto);
+    public Producto_accesorio(String descripcion, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+        super(nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.descripcion = descripcion;
     }
+
+    
 
     
     

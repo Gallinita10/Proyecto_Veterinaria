@@ -12,7 +12,8 @@ package Model;
 public class Producto {
     protected int id_productos;
     protected String nombre_producto;
-    protected float precio_producto;
+    protected float precio_costo;
+    protected float precio_venta;
     protected String tipo_producto;
 
     public int getId_productos() {
@@ -31,13 +32,23 @@ public class Producto {
         this.nombre_producto = nombre_producto;
     }
 
-    public float getPrecio_producto() {
-        return precio_producto;
+    public float getPrecio_costo() {
+        return precio_costo;
     }
 
-    public void setPrecio_producto(float precio_producto) {
-        this.precio_producto = precio_producto;
+    public void setPrecio_costo(float precio_costo) {
+        this.precio_costo = precio_costo;
     }
+
+    public float getPrecio_venta() {
+        return precio_venta;
+    }
+
+    public void setPrecio_venta(float precio_venta) {
+        this.precio_venta = precio_venta;
+    }
+
+    
 
     public String getTipo_producto() {
         return tipo_producto;
@@ -52,20 +63,19 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(int id_productos, String nombre_producto, float precio_producto, String tipo_producto) {
+    public Producto(int id_productos, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
         this.id_productos = id_productos;
         this.nombre_producto = nombre_producto;
-        this.precio_producto = precio_producto;
+        this.precio_costo = precio_costo;
+        this.precio_venta = precio_venta;
         this.tipo_producto = tipo_producto;
     }
 
-    public Producto(String nombre_producto, float precio_producto, String tipo_producto) {
+    public Producto(String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
         this.nombre_producto = nombre_producto;
-        this.precio_producto = precio_producto;
+        this.precio_costo = precio_costo;
+        this.precio_venta = precio_venta;
         this.tipo_producto = tipo_producto;
     }
 
-    
-    
-    
 }

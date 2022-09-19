@@ -44,16 +44,14 @@
                                   <Component id="lblPeso" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblPrecioKilo" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblPrecioBolsa" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblPrecioProveedor" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="txtPrecioBolsa" min="-2" pref="186" max="-2" attributes="0"/>
                                   <Component id="txtPrecioKilo" min="-2" pref="186" max="-2" attributes="0"/>
                                   <Component id="txtPeso" min="-2" pref="186" max="-2" attributes="0"/>
                                   <Component id="txtPrecio" min="-2" pref="186" max="-2" attributes="0"/>
                                   <Component id="txtNombre" min="-2" pref="186" max="-2" attributes="0"/>
-                                  <Component id="txtPrecioProveedor" min="-2" pref="186" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
@@ -112,12 +110,7 @@
                   <Component id="lblPrecioBolsa" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtPrecioBolsa" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblPrecioProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPrecioProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnAgregar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnModificar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -166,11 +159,6 @@
         <Property name="text" type="java.lang.String" value="Precio por bolsa"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPrecioProveedor">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Precio proveedor"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="btnAgregar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Agregar"/>
@@ -205,11 +193,6 @@
     <Component class="javax.swing.JTextField" name="txtFechaCaducidad">
     </Component>
     <Component class="javax.swing.JTextField" name="txtPrecioBolsa">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtPrecioProveedor">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPrecioProveedorActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

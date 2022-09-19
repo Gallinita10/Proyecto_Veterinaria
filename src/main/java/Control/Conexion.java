@@ -7,23 +7,28 @@ package Control;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.*;
 
 /**
  *
  * @author Enzo
  */
 public class Conexion {
-    public static Connection getConexion(){
+    public static Connection getConexion() throws ClassNotFoundException{
         
-        String conexionUrl = "jdbc:sqlserver://localhost:1433;"
-                +"database:DB_Veterinaria;"
+        String conexionUrl = "jdbc:sqlserver://DESKTOP-1PSC1H3\\SQLEXPRESS:1433;"
+                +"DB_Name:Veterinaria;"
                 +"user:SuperU;"
-                +"password:contrasuperu1;"
+                +"password:123456;"
                 +"loginTimeout=30;"
-                +"integratedSecurity=true";
+                +"integratedSecurity=true;";
         
         
         try{
+            
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");     
+       System.out.println("Driver funciona correctamente.");
+            
             Connection con = DriverManager.getConnection(conexionUrl);
             return con;
         }catch(SQLException ex){

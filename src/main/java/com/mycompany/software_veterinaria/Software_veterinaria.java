@@ -5,6 +5,9 @@
 
 package com.mycompany.software_veterinaria;
 
+import Control.Conexion;
+import java.sql.Connection;
+
 /**
  *
  * @author Enzo
@@ -12,6 +15,8 @@ package com.mycompany.software_veterinaria;
 public class Software_veterinaria {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        Connection con = Conexion.getConexion();
+        
     }
 }

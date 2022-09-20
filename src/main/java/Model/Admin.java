@@ -13,6 +13,7 @@ public class Admin {
     protected int id_admin;
     protected String nombre_admin;
     protected String contraseña;
+    protected String nombre_usuario;
 
     public int getId_admin() {
         return id_admin;
@@ -38,19 +39,33 @@ public class Admin {
         this.contraseña = contraseña;
     }
 
+    public String getNombre_usuario() {
+        return nombre_usuario;
+    }
+
+    public void setNombre_usuario(String nombre_usuario) {
+        this.nombre_usuario = nombre_usuario;
+    }
+    
+    
+
     public Admin() {
     }
 
-    public Admin(int id_admin, String nombre_admin, String contraseña) {
+    public Admin(int id_admin, String nombre_admin, String contraseña, String nombre_usuario) {
         this.id_admin = id_admin;
         this.nombre_admin = nombre_admin;
         this.contraseña = contraseña;
+        this.nombre_usuario = nombre_usuario;
     }
 
-    public Admin(String nombre_admin, String contraseña) {
+    public Admin(String nombre_admin, String contraseña, String nombre_usuario) {
         this.nombre_admin = nombre_admin;
         this.contraseña = contraseña;
+        this.nombre_usuario = nombre_usuario;
     }
+
+    
 
     
     

@@ -9,19 +9,21 @@ package Model;
  * @author User
  */
 public class Producto_alimenticio extends Producto {
-    protected String peso_alimento;
+    protected int peso_alimento;
     protected String fecha_caducidad;
     protected float precio_por_kilo;
     protected float precio_por_bolsa;
 
-    public String getPeso_alimento() {
+    public int getPeso_alimento() {
         return peso_alimento;
     }
 
-    public void setPeso_alimento(String peso_alimento) {
+    public void setPeso_alimento(int peso_alimento) {
         this.peso_alimento = peso_alimento;
     }
 
+    
+    
     public String getFecha_caducidad() {
         return fecha_caducidad;
     }
@@ -92,7 +94,7 @@ public class Producto_alimenticio extends Producto {
     public Producto_alimenticio() {
     }
 
-    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, int id_productos, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+    public Producto_alimenticio(int peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, int id_productos, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
         super(id_productos, nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.peso_alimento = peso_alimento;
         this.fecha_caducidad = fecha_caducidad;
@@ -100,7 +102,7 @@ public class Producto_alimenticio extends Producto {
         this.precio_por_bolsa = precio_por_bolsa;
     }
 
-    public Producto_alimenticio(String peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
+    public Producto_alimenticio(int peso_alimento, String fecha_caducidad, float precio_por_kilo, float precio_por_bolsa, String nombre_producto, float precio_costo, float precio_venta, String tipo_producto) {
         super(nombre_producto, precio_costo, precio_venta, tipo_producto);
         this.peso_alimento = peso_alimento;
         this.fecha_caducidad = fecha_caducidad;
@@ -108,6 +110,7 @@ public class Producto_alimenticio extends Producto {
         this.precio_por_bolsa = precio_por_bolsa;
     }
 
+    
 
     
 }
